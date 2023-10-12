@@ -1,0 +1,1 @@
+{"version":3,"sources":["file:///D:/cocos_work/games/SimulateCity/assets/src/GlobalConst.ts"],"names":["GlobalConst","interruptOp"],"mappings":";;;iBAAaA,W;;;;;;;;;;;;;6BAAAA,W,GAAN,MAAMA,WAAN,CAAkB,E;;AAErB;AAFSA,MAAAA,W,CAGFC,W,GAAsB,K","sourcesContent":["export class GlobalConst {\r\n\r\n    /** 是否中断相机的操作 */\r\n    static interruptOp:boolean = false;\r\n\r\n    \r\n}"]}

@@ -1,0 +1,710 @@
+{
+  "7e7c37d2-49b0-4352-b0f1-27dbe37b5560": {
+    "url": "db://assets/res",
+    "value": {}
+  },
+  "8e179848-17ad-48e1-846a-ac7b7171d0e4": {
+    "url": "db://assets/res/material",
+    "value": {}
+  },
+  "546b9a48-8ab1-4cf5-93ec-e8473f593c5f": {
+    "url": "db://assets/res/material/standard-material-capsule.mtl",
+    "value": {
+      "depends": [
+        "c8f66d17-351a-48da-a12c-0212d28575c4",
+        "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2@6c48a"
+      ]
+    }
+  },
+  "748e3b7a-1f6f-4328-8f51-b27fc9487856": {
+    "url": "db://assets/新建文件夹",
+    "value": {}
+  },
+  "fc4b1c80-e31c-4482-8056-05f255115649": {
+    "url": "db://assets/res/materialTexture",
+    "value": {}
+  },
+  "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2": {
+    "url": "db://assets/res/materialTexture/Common_Leaf01.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "df9deb4d-8a6f-4279-b1c3-311ed5cb5fd5": {
+    "url": "db://assets/res/materialTexture/Common_SmokeStretched.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "4e00e6a2-a458-492f-8817-c10c787e9699": {
+    "url": "db://assets/res/materialTexture/dn_alch_0001.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "7a3a7bb2-544e-4c5e-8439-5a26f49c1606": {
+    "url": "db://assets/res/materialTexture/dust_puff_particle_sheet.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "f302ae68-b2a1-4f78-9b70-479626c38831": {
+    "url": "db://assets/res/materialTexture/Effects_Textures_1668-1.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2@6c48a": {
+    "url": "db://assets/res/materialTexture/Common_Leaf01.png@6c48a",
+    "value": {
+      "depends": [
+        "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2"
+      ]
+    }
+  },
+  "8b2029e2-0f45-4166-b68d-f1a958a75864": {
+    "url": "db://assets/res/materialTexture/etc_mirage_1.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "4e00e6a2-a458-492f-8817-c10c787e9699@6c48a": {
+    "url": "db://assets/res/materialTexture/dn_alch_0001.png@6c48a",
+    "value": {
+      "depends": [
+        "4e00e6a2-a458-492f-8817-c10c787e9699"
+      ]
+    }
+  },
+  "577578f9-126c-4f7f-acbf-b6994b7b4677": {
+    "url": "db://assets/res/materialTexture/etc_mirage_cold_bs.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "f302ae68-b2a1-4f78-9b70-479626c38831@6c48a": {
+    "url": "db://assets/res/materialTexture/Effects_Textures_1668-1.png@6c48a",
+    "value": {
+      "depends": [
+        "f302ae68-b2a1-4f78-9b70-479626c38831"
+      ]
+    }
+  },
+  "b4c9bec3-fd01-4cfb-8b6d-1298be7be2a6": {
+    "url": "db://assets/res/materialTexture/etc_mirage_red.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "df9deb4d-8a6f-4279-b1c3-311ed5cb5fd5@6c48a": {
+    "url": "db://assets/res/materialTexture/Common_SmokeStretched.png@6c48a",
+    "value": {
+      "depends": [
+        "df9deb4d-8a6f-4279-b1c3-311ed5cb5fd5"
+      ]
+    }
+  },
+  "7a3a7bb2-544e-4c5e-8439-5a26f49c1606@6c48a": {
+    "url": "db://assets/res/materialTexture/dust_puff_particle_sheet.png@6c48a",
+    "value": {
+      "depends": [
+        "7a3a7bb2-544e-4c5e-8439-5a26f49c1606"
+      ]
+    }
+  },
+  "669a9e26-8133-4096-89fe-eba3fcfdcd6a": {
+    "url": "db://assets/res/materialTexture/etc_mirage_zi.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "0a61941b-e08d-4846-8f7a-c07bff54ab6e": {
+    "url": "db://assets/res/materialTexture/falloffLightbeam.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "8b2029e2-0f45-4166-b68d-f1a958a75864@6c48a": {
+    "url": "db://assets/res/materialTexture/etc_mirage_1.png@6c48a",
+    "value": {
+      "depends": [
+        "8b2029e2-0f45-4166-b68d-f1a958a75864"
+      ]
+    }
+  },
+  "2014db4d-a395-4d90-be58-5fc8d108398a": {
+    "url": "db://assets/res/materialTexture/feixing4.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "577578f9-126c-4f7f-acbf-b6994b7b4677@6c48a": {
+    "url": "db://assets/res/materialTexture/etc_mirage_cold_bs.png@6c48a",
+    "value": {
+      "depends": [
+        "577578f9-126c-4f7f-acbf-b6994b7b4677"
+      ]
+    }
+  },
+  "755d8de8-b12e-4b83-be06-103643b0c33c": {
+    "url": "db://assets/res/materialTexture/fire_glow.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "669a9e26-8133-4096-89fe-eba3fcfdcd6a@6c48a": {
+    "url": "db://assets/res/materialTexture/etc_mirage_zi.png@6c48a",
+    "value": {
+      "depends": [
+        "669a9e26-8133-4096-89fe-eba3fcfdcd6a"
+      ]
+    }
+  },
+  "202994b5-8d25-4131-bc15-02d93d633ec6": {
+    "url": "db://assets/res/materialTexture/fire_particles_2_sheet.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "b4c9bec3-fd01-4cfb-8b6d-1298be7be2a6@6c48a": {
+    "url": "db://assets/res/materialTexture/etc_mirage_red.png@6c48a",
+    "value": {
+      "depends": [
+        "b4c9bec3-fd01-4cfb-8b6d-1298be7be2a6"
+      ]
+    }
+  },
+  "2bd2a702-6fb4-4ee0-a8fb-f1fe72efa478": {
+    "url": "db://assets/res/materialTexture/fire_particles_4_sheet.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "0a61941b-e08d-4846-8f7a-c07bff54ab6e@6c48a": {
+    "url": "db://assets/res/materialTexture/falloffLightbeam.png@6c48a",
+    "value": {
+      "depends": [
+        "0a61941b-e08d-4846-8f7a-c07bff54ab6e"
+      ]
+    }
+  },
+  "83fab7fb-3700-4c87-9150-c8f96d8c462e": {
+    "url": "db://assets/res/materialTexture/Fog01.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "2014db4d-a395-4d90-be58-5fc8d108398a@6c48a": {
+    "url": "db://assets/res/materialTexture/feixing4.png@6c48a",
+    "value": {
+      "depends": [
+        "2014db4d-a395-4d90-be58-5fc8d108398a"
+      ]
+    }
+  },
+  "a1725893-6be9-4e8d-ab70-243b5c1a8044": {
+    "url": "db://assets/res/materialTexture/FX_RingWave_008_TEX_KKJ.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "755d8de8-b12e-4b83-be06-103643b0c33c@6c48a": {
+    "url": "db://assets/res/materialTexture/fire_glow.png@6c48a",
+    "value": {
+      "depends": [
+        "755d8de8-b12e-4b83-be06-103643b0c33c"
+      ]
+    }
+  },
+  "c1625171-b434-42d5-9892-340ceb3f041e": {
+    "url": "db://assets/res/materialTexture/glow09.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "202994b5-8d25-4131-bc15-02d93d633ec6@6c48a": {
+    "url": "db://assets/res/materialTexture/fire_particles_2_sheet.png@6c48a",
+    "value": {
+      "depends": [
+        "202994b5-8d25-4131-bc15-02d93d633ec6"
+      ]
+    }
+  },
+  "88f29f8e-f527-4ead-97f8-2c62bbfe9961": {
+    "url": "db://assets/res/materialTexture/ice_pieces_2_color_sheet_new.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "2bd2a702-6fb4-4ee0-a8fb-f1fe72efa478@6c48a": {
+    "url": "db://assets/res/materialTexture/fire_particles_4_sheet.png@6c48a",
+    "value": {
+      "depends": [
+        "2bd2a702-6fb4-4ee0-a8fb-f1fe72efa478"
+      ]
+    }
+  },
+  "b5559568-e5dd-4c2f-90b1-438495bede10": {
+    "url": "db://assets/res/materialTexture/impact_new_2_a_new_sheet.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "83fab7fb-3700-4c87-9150-c8f96d8c462e@6c48a": {
+    "url": "db://assets/res/materialTexture/Fog01.png@6c48a",
+    "value": {
+      "depends": [
+        "83fab7fb-3700-4c87-9150-c8f96d8c462e"
+      ]
+    }
+  },
+  "02780b01-c082-40f3-b8ba-73d39193acd0": {
+    "url": "db://assets/res/materialTexture/Lightningblue1x5.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "a1725893-6be9-4e8d-ab70-243b5c1a8044@6c48a": {
+    "url": "db://assets/res/materialTexture/FX_RingWave_008_TEX_KKJ.png@6c48a",
+    "value": {
+      "depends": [
+        "a1725893-6be9-4e8d-ab70-243b5c1a8044"
+      ]
+    }
+  },
+  "dc92b738-855d-4a05-88c2-53f5d223c029": {
+    "url": "db://assets/res/materialTexture/lightning_purple_2_sheet.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "88f29f8e-f527-4ead-97f8-2c62bbfe9961@6c48a": {
+    "url": "db://assets/res/materialTexture/ice_pieces_2_color_sheet_new.png@6c48a",
+    "value": {
+      "depends": [
+        "88f29f8e-f527-4ead-97f8-2c62bbfe9961"
+      ]
+    }
+  },
+  "327c9438-9316-4b9a-858b-1d556e7f9fff": {
+    "url": "db://assets/res/materialTexture/M_Flash_01.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "c1625171-b434-42d5-9892-340ceb3f041e@6c48a": {
+    "url": "db://assets/res/materialTexture/glow09.png@6c48a",
+    "value": {
+      "depends": [
+        "c1625171-b434-42d5-9892-340ceb3f041e"
+      ]
+    }
+  },
+  "0b73391e-a672-4728-84b2-0af6d0e70419": {
+    "url": "db://assets/res/materialTexture/M_Heal_01.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "b5559568-e5dd-4c2f-90b1-438495bede10@6c48a": {
+    "url": "db://assets/res/materialTexture/impact_new_2_a_new_sheet.png@6c48a",
+    "value": {
+      "depends": [
+        "b5559568-e5dd-4c2f-90b1-438495bede10"
+      ]
+    }
+  },
+  "ac9dd78c-355d-45c8-bf60-1cb6b6b0e8d4": {
+    "url": "db://assets/res/materialTexture/Ring_002.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "dc92b738-855d-4a05-88c2-53f5d223c029@6c48a": {
+    "url": "db://assets/res/materialTexture/lightning_purple_2_sheet.png@6c48a",
+    "value": {
+      "depends": [
+        "dc92b738-855d-4a05-88c2-53f5d223c029"
+      ]
+    }
+  },
+  "366a16d1-1d98-47ac-b2d5-d35a3850d8d1": {
+    "url": "db://assets/res/materialTexture/Rock01.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "327c9438-9316-4b9a-858b-1d556e7f9fff@6c48a": {
+    "url": "db://assets/res/materialTexture/M_Flash_01.png@6c48a",
+    "value": {
+      "depends": [
+        "327c9438-9316-4b9a-858b-1d556e7f9fff"
+      ]
+    }
+  },
+  "a1f7543b-8efb-4aa0-852d-01e06e6a72eb": {
+    "url": "db://assets/res/materialTexture/SharpCircle.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "0b73391e-a672-4728-84b2-0af6d0e70419@6c48a": {
+    "url": "db://assets/res/materialTexture/M_Heal_01.png@6c48a",
+    "value": {
+      "depends": [
+        "0b73391e-a672-4728-84b2-0af6d0e70419"
+      ]
+    }
+  },
+  "02780b01-c082-40f3-b8ba-73d39193acd0@6c48a": {
+    "url": "db://assets/res/materialTexture/Lightningblue1x5.png@6c48a",
+    "value": {
+      "depends": [
+        "02780b01-c082-40f3-b8ba-73d39193acd0"
+      ]
+    }
+  },
+  "5d0ab632-b2d8-4aa9-89eb-323b9f4ae7a4": {
+    "url": "db://assets/res/materialTexture/SharpCircleGlow.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "dbef2e33-9f53-4165-a2e8-79067e3364e9": {
+    "url": "db://assets/res/materialTexture/snow_dot.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "ac9dd78c-355d-45c8-bf60-1cb6b6b0e8d4@6c48a": {
+    "url": "db://assets/res/materialTexture/Ring_002.png@6c48a",
+    "value": {
+      "depends": [
+        "ac9dd78c-355d-45c8-bf60-1cb6b6b0e8d4"
+      ]
+    }
+  },
+  "b8bc0962-2ec0-42af-9e1b-956471d3be04": {
+    "url": "db://assets/res/materialTexture/storm_sharpshock01.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "a1f7543b-8efb-4aa0-852d-01e06e6a72eb@6c48a": {
+    "url": "db://assets/res/materialTexture/SharpCircle.png@6c48a",
+    "value": {
+      "depends": [
+        "a1f7543b-8efb-4aa0-852d-01e06e6a72eb"
+      ]
+    }
+  },
+  "3a8abb8f-3ec7-4089-9d18-f01091197cd6": {
+    "url": "db://assets/res/materialTexture/vulcan_projectile.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "dbef2e33-9f53-4165-a2e8-79067e3364e9@6c48a": {
+    "url": "db://assets/res/materialTexture/snow_dot.png@6c48a",
+    "value": {
+      "depends": [
+        "dbef2e33-9f53-4165-a2e8-79067e3364e9"
+      ]
+    }
+  },
+  "3e008cf5-e7fe-4227-9a4b-d35d7f82d22d": {
+    "url": "db://assets/res/materialTexture/wakka02.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "5d0ab632-b2d8-4aa9-89eb-323b9f4ae7a4@6c48a": {
+    "url": "db://assets/res/materialTexture/SharpCircleGlow.png@6c48a",
+    "value": {
+      "depends": [
+        "5d0ab632-b2d8-4aa9-89eb-323b9f4ae7a4"
+      ]
+    }
+  },
+  "dd5f61ee-6583-4076-96ea-338f4cbd0a5d": {
+    "url": "db://assets/res/materialTexture/wavering02_02.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "366a16d1-1d98-47ac-b2d5-d35a3850d8d1@6c48a": {
+    "url": "db://assets/res/materialTexture/Rock01.png@6c48a",
+    "value": {
+      "depends": [
+        "366a16d1-1d98-47ac-b2d5-d35a3850d8d1"
+      ]
+    }
+  },
+  "d24abd06-a293-4463-9888-5eb8d9c865ae": {
+    "url": "db://assets/res/materialTexture/WFX_T_MF Side RIFLE1 A8.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "3a8abb8f-3ec7-4089-9d18-f01091197cd6@6c48a": {
+    "url": "db://assets/res/materialTexture/vulcan_projectile.png@6c48a",
+    "value": {
+      "depends": [
+        "3a8abb8f-3ec7-4089-9d18-f01091197cd6"
+      ]
+    }
+  },
+  "7cfbe3b6-30ee-4541-a2ad-b30af12d735b": {
+    "url": "db://assets/res/materialTexture/won-light-up-sb.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "b8bc0962-2ec0-42af-9e1b-956471d3be04@6c48a": {
+    "url": "db://assets/res/materialTexture/storm_sharpshock01.png@6c48a",
+    "value": {
+      "depends": [
+        "b8bc0962-2ec0-42af-9e1b-956471d3be04"
+      ]
+    }
+  },
+  "3e008cf5-e7fe-4227-9a4b-d35d7f82d22d@6c48a": {
+    "url": "db://assets/res/materialTexture/wakka02.png@6c48a",
+    "value": {
+      "depends": [
+        "3e008cf5-e7fe-4227-9a4b-d35d7f82d22d"
+      ]
+    }
+  },
+  "dd5f61ee-6583-4076-96ea-338f4cbd0a5d@6c48a": {
+    "url": "db://assets/res/materialTexture/wavering02_02.png@6c48a",
+    "value": {
+      "depends": [
+        "dd5f61ee-6583-4076-96ea-338f4cbd0a5d"
+      ]
+    }
+  },
+  "d24abd06-a293-4463-9888-5eb8d9c865ae@6c48a": {
+    "url": "db://assets/res/materialTexture/WFX_T_MF Side RIFLE1 A8.png@6c48a",
+    "value": {
+      "depends": [
+        "d24abd06-a293-4463-9888-5eb8d9c865ae"
+      ]
+    }
+  },
+  "7cfbe3b6-30ee-4541-a2ad-b30af12d735b@6c48a": {
+    "url": "db://assets/res/materialTexture/won-light-up-sb.png@6c48a",
+    "value": {
+      "depends": [
+        "7cfbe3b6-30ee-4541-a2ad-b30af12d735b"
+      ]
+    }
+  },
+  "14be7286-baf1-49e1-90b6-85a1563042db": {
+    "url": "db://assets/res/material/standard-material-capsule-001.mtl",
+    "value": {
+      "depends": [
+        "c8f66d17-351a-48da-a12c-0212d28575c4",
+        "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2@6c48a"
+      ]
+    }
+  },
+  "320206d5-44a0-41d3-9673-30867fbf957b": {
+    "url": "db://assets/res/material/standard-material-capsule-002.mtl",
+    "value": {
+      "depends": [
+        "c8f66d17-351a-48da-a12c-0212d28575c4",
+        "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2@6c48a"
+      ]
+    }
+  },
+  "6eeee5e4-8040-4ca5-bd6b-4e0a05ac2892": {
+    "url": "db://assets/res/material/standard-material-capsule-003.mtl",
+    "value": {
+      "depends": [
+        "a3cd009f-0ab0-420d-9278-b9fdab939bbc",
+        "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2@6c48a"
+      ]
+    }
+  },
+  "a35af331-21e5-4986-8edb-5c24a5b06a57": {
+    "url": "db://assets/res/material/standard-material-capsule-004.mtl",
+    "value": {
+      "depends": [
+        "c8f66d17-351a-48da-a12c-0212d28575c4",
+        "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2@6c48a"
+      ]
+    }
+  },
+  "29c67eec-ec81-402c-aa1a-0dfaaab4fce3": {
+    "url": "db://assets/res/materialTexture/3.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "1e019a40-bbfb-4014-b747-307a918dfb50": {
+    "url": "db://assets/res/materialTexture/youanzong.png",
+    "value": {
+      "depends": []
+    }
+  },
+  "29c67eec-ec81-402c-aa1a-0dfaaab4fce3@6c48a": {
+    "url": "db://assets/res/materialTexture/3.png@6c48a",
+    "value": {
+      "depends": [
+        "29c67eec-ec81-402c-aa1a-0dfaaab4fce3"
+      ]
+    }
+  },
+  "1e019a40-bbfb-4014-b747-307a918dfb50@6c48a": {
+    "url": "db://assets/res/materialTexture/youanzong.png@6c48a",
+    "value": {
+      "depends": [
+        "1e019a40-bbfb-4014-b747-307a918dfb50"
+      ]
+    }
+  },
+  "f9ed3ec8-4488-4d5e-9a8a-240210d6d3d5": {
+    "url": "db://assets/res/material/standard-material-plane.mtl",
+    "value": {
+      "depends": [
+        "c8f66d17-351a-48da-a12c-0212d28575c4",
+        "29c67eec-ec81-402c-aa1a-0dfaaab4fce3@6c48a"
+      ]
+    }
+  },
+  "760b5a51-a3d6-4f4a-af77-668229d633f2": {
+    "url": "db://assets/src",
+    "value": {}
+  },
+  "652876d4-ff30-402c-8e88-8609d7d142fb": {
+    "url": "db://assets/resources",
+    "value": {}
+  },
+  "7f9a83d0-bfa2-4d40-8eb0-04c6a409a91a": {
+    "url": "db://assets/src/component",
+    "value": {}
+  },
+  "cc87237e-205a-4f42-ae6c-ff2577360aee": {
+    "url": "db://assets/src/component/CameraControllerComp.ts",
+    "value": {}
+  },
+  "368103ba-e2dc-4cfe-8142-3ca6463b4317": {
+    "url": "db://assets/src/data",
+    "value": {}
+  },
+  "75dd961c-42cf-447d-88bd-3582c9b45071": {
+    "url": "db://assets/src/GlobalConst.ts",
+    "value": {}
+  },
+  "4f57a5b6-4aa8-4f6c-85fc-7c4725696b9b": {
+    "url": "db://assets/src/component/FreeCamera.ts",
+    "value": {}
+  },
+  "ffbcc7d9-0d17-4ef7-9350-15c4448d7885": {
+    "url": "db://assets/src/component/OperateComp.ts",
+    "value": {}
+  },
+  "d97e8b9c-b22b-4e1f-89b7-2b657e77008c": {
+    "url": "db://assets/scene.scene",
+    "value": {
+      "depends": [
+        "d97e8b9c-b22b-4e1f-89b7-2b657e77008c",
+        "546b9a48-8ab1-4cf5-93ec-e8473f593c5f",
+        "1263d74c-8167-4928-91a6-4e2672411f47@801ec",
+        "6eeee5e4-8040-4ca5-bd6b-4e0a05ac2892",
+        "1263d74c-8167-4928-91a6-4e2672411f47@a804a",
+        "14be7286-baf1-49e1-90b6-85a1563042db",
+        "1263d74c-8167-4928-91a6-4e2672411f47@801ec",
+        "f9ed3ec8-4488-4d5e-9a8a-240210d6d3d5",
+        "1263d74c-8167-4928-91a6-4e2672411f47@2e76e",
+        "e2a6418f-8324-420c-9c73-cd12b0b5bd82",
+        "1263d74c-8167-4928-91a6-4e2672411f47@17020",
+        "7d8f9b89-4fd1-4c9f-a3ab-38ec7cded7ca@f9941",
+        "d032ac98-05e1-4090-88bb-eb640dcb5fc1@b47c0",
+        "d032ac98-05e1-4090-88bb-eb640dcb5fc1@b47c0",
+        "6f01cf7f-81bf-4a7e-bd5d-0afc19696480@b47c0"
+      ]
+    }
+  },
+  "c57f6add-4e03-46aa-ba35-6612b25d07f2": {
+    "url": "db://assets/src/component/TestScreenInputComp.ts",
+    "value": {}
+  },
+  "33f25cab-8e85-45b9-8d8f-16d023930905": {
+    "url": "db://assets/src/framework",
+    "value": {}
+  },
+  "838a2b41-da79-4cee-a742-4ef897785aa6": {
+    "url": "db://assets/src/msg",
+    "value": {}
+  },
+  "f6b651fc-4c42-4898-9559-6c5dae96690b": {
+    "url": "db://assets/src/framework/csv2json.ts",
+    "value": {}
+  },
+  "ee0573b6-30af-4fc0-81ef-aee04392ec92": {
+    "url": "db://assets/src/framework/csvManager.ts",
+    "value": {}
+  },
+  "b7951bd6-520d-4269-bd4c-cf793dedceba": {
+    "url": "db://assets/src/framework/Handler.ts",
+    "value": {}
+  },
+  "590352bc-1baa-4b5e-bfa4-1dda4a538d2b": {
+    "url": "db://assets/src/framework/localConfig.ts",
+    "value": {}
+  },
+  "9163ff35-af8f-46dc-9ba7-888b8f140736": {
+    "url": "db://assets/src/framework/Log.ts",
+    "value": {}
+  },
+  "a63d58d5-0bc5-492c-a375-c6874452b659": {
+    "url": "db://assets/src/framework/poolManager.ts",
+    "value": {}
+  },
+  "fa19f3b4-8049-4474-bc5c-5c713ecf9c36": {
+    "url": "db://assets/src/framework/resourceUtil.ts",
+    "value": {}
+  },
+  "cceebd43-e948-4cc9-9a55-fcc637af7f82": {
+    "url": "db://assets/src/framework/storageManager.ts",
+    "value": {}
+  },
+  "cefadf31-8eb1-4a32-bfd6-4337e95d9385": {
+    "url": "db://assets/src/framework/tips.ts",
+    "value": {}
+  },
+  "25e11b88-2be8-4ab2-9b0e-d75e1334f54e": {
+    "url": "db://assets/src/framework/uiManager.ts",
+    "value": {}
+  },
+  "2f005d0c-891d-4440-8fdd-79138a32605b": {
+    "url": "db://assets/src/framework/util.ts",
+    "value": {}
+  },
+  "67a3898e-4963-47d9-8023-aa72003bf7e9": {
+    "url": "db://assets/src/msg/msg.ts",
+    "value": {}
+  },
+  "7e300cab-4364-4f07-bac5-6c81beb6a56e": {
+    "url": "db://assets/src/msg/MsgEvent.ts",
+    "value": {}
+  },
+  "bb0fc3bf-4017-49e7-8f07-3f0074c953c2": {
+    "url": "db://assets/src/component/MapOperateComp.ts",
+    "value": {}
+  },
+  "fea4ba00-06b9-492f-a040-c470d9d90c45": {
+    "url": "db://assets/src/res.ts",
+    "value": {}
+  },
+  "e2a6418f-8324-420c-9c73-cd12b0b5bd82": {
+    "url": "db://assets/res/material/standard-material-sphere-instancing.mtl",
+    "value": {
+      "depends": [
+        "c8f66d17-351a-48da-a12c-0212d28575c4"
+      ]
+    }
+  }
+}

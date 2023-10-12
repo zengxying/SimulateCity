@@ -1,0 +1,586 @@
+{
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res.meta": {
+    "time": 1696901738396.5044
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res": {
+    "time": 1696902065884.6787,
+    "uuid": "7e7c37d2-49b0-4352-b0f1-27dbe37b5560",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material.meta": {
+    "time": 1696901749994.2915
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material": {
+    "time": 1697091205792.767,
+    "uuid": "8e179848-17ad-48e1-846a-ac7b7171d0e4",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule.mtl.meta": {
+    "time": 1696901774799.2446
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule.mtl": {
+    "time": 1696902138954.0686,
+    "uuid": "546b9a48-8ab1-4cf5-93ec-e8473f593c5f",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture.meta": {
+    "time": 1696902065887.678
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture": {
+    "time": 1696902551635.5337,
+    "uuid": "fc4b1c80-e31c-4482-8056-05f255115649",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Common_Leaf01.png.meta": {
+    "time": 1696902066285.5518
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Common_SmokeStretched.png.meta": {
+    "time": 1696902066297.5454
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\dn_alch_0001.png.meta": {
+    "time": 1696902066287.5498
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\dust_puff_particle_sheet.png.meta": {
+    "time": 1696902066298.5452
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Effects_Textures_1668-1.png.meta": {
+    "time": 1696902066295.5461
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\etc_mirage_1.png.meta": {
+    "time": 1696902066334.5344
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\etc_mirage_cold_bs.png.meta": {
+    "time": 1696902066336.5344
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\etc_mirage_red.png.meta": {
+    "time": 1696902066346.532
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\etc_mirage_zi.png.meta": {
+    "time": 1696902066345.5317
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\falloffLightbeam.png.meta": {
+    "time": 1696902066372.5225
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\feixing4.png.meta": {
+    "time": 1696902066407.511
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\fire_glow.png.meta": {
+    "time": 1696902066414.5093
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\fire_particles_2_sheet.png.meta": {
+    "time": 1696902066443.4993
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\fire_particles_4_sheet.png.meta": {
+    "time": 1696902066451.4976
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Fog01.png.meta": {
+    "time": 1696902066561.462
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\FX_RingWave_008_TEX_KKJ.png.meta": {
+    "time": 1696902066577.458
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\glow09.png.meta": {
+    "time": 1696902066592.4517
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\ice_pieces_2_color_sheet_new.png.meta": {
+    "time": 1696902066588.4536
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\impact_new_2_a_new_sheet.png.meta": {
+    "time": 1696902066686.4216
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Lightningblue1x5.png.meta": {
+    "time": 1696902066717.4114
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\lightning_purple_2_sheet.png.meta": {
+    "time": 1696902066701.4163
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\M_Flash_01.png.meta": {
+    "time": 1696902066709.414
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\M_Heal_01.png.meta": {
+    "time": 1696902066715.412
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Ring_002.png.meta": {
+    "time": 1696902066774.3938
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Rock01.png.meta": {
+    "time": 1696902066789.3887
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\SharpCircle.png.meta": {
+    "time": 1696902066776.392
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\SharpCircleGlow.png.meta": {
+    "time": 1696902066785.3894
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\snow_dot.png.meta": {
+    "time": 1696902066779.3918
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\storm_sharpshock01.png.meta": {
+    "time": 1696902066857.3662
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\vulcan_projectile.png.meta": {
+    "time": 1696902066849.369
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\wakka02.png.meta": {
+    "time": 1696902066864.364
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\wavering02_02.png.meta": {
+    "time": 1696902066866.3633
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\WFX_T_MF Side RIFLE1 A8.png.meta": {
+    "time": 1696902066870.3625
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\won-light-up-sb.png.meta": {
+    "time": 1696902066906.3506
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Common_Leaf01.png": {
+    "time": 1691033100000,
+    "uuid": "d7c28b13-69b4-45b6-9f9a-7d2525ca03d2",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\dn_alch_0001.png": {
+    "time": 1691033100000,
+    "uuid": "4e00e6a2-a458-492f-8817-c10c787e9699",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Effects_Textures_1668-1.png": {
+    "time": 1691033100000,
+    "uuid": "f302ae68-b2a1-4f78-9b70-479626c38831",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Common_SmokeStretched.png": {
+    "time": 1691033100000,
+    "uuid": "df9deb4d-8a6f-4279-b1c3-311ed5cb5fd5",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\dust_puff_particle_sheet.png": {
+    "time": 1691033100000,
+    "uuid": "7a3a7bb2-544e-4c5e-8439-5a26f49c1606",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\etc_mirage_1.png": {
+    "time": 1691033100000,
+    "uuid": "8b2029e2-0f45-4166-b68d-f1a958a75864",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\etc_mirage_cold_bs.png": {
+    "time": 1691033100000,
+    "uuid": "577578f9-126c-4f7f-acbf-b6994b7b4677",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\etc_mirage_zi.png": {
+    "time": 1691033100000,
+    "uuid": "669a9e26-8133-4096-89fe-eba3fcfdcd6a",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\etc_mirage_red.png": {
+    "time": 1691033100000,
+    "uuid": "b4c9bec3-fd01-4cfb-8b6d-1298be7be2a6",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\falloffLightbeam.png": {
+    "time": 1691033100000,
+    "uuid": "0a61941b-e08d-4846-8f7a-c07bff54ab6e",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\feixing4.png": {
+    "time": 1691033100000,
+    "uuid": "2014db4d-a395-4d90-be58-5fc8d108398a",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\fire_glow.png": {
+    "time": 1691033100000,
+    "uuid": "755d8de8-b12e-4b83-be06-103643b0c33c",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\fire_particles_2_sheet.png": {
+    "time": 1691033100000,
+    "uuid": "202994b5-8d25-4131-bc15-02d93d633ec6",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\fire_particles_4_sheet.png": {
+    "time": 1691033100000,
+    "uuid": "2bd2a702-6fb4-4ee0-a8fb-f1fe72efa478",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Fog01.png": {
+    "time": 1691033100000,
+    "uuid": "83fab7fb-3700-4c87-9150-c8f96d8c462e",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\FX_RingWave_008_TEX_KKJ.png": {
+    "time": 1691033100000,
+    "uuid": "a1725893-6be9-4e8d-ab70-243b5c1a8044",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\ice_pieces_2_color_sheet_new.png": {
+    "time": 1691033100000,
+    "uuid": "88f29f8e-f527-4ead-97f8-2c62bbfe9961",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\glow09.png": {
+    "time": 1691033100000,
+    "uuid": "c1625171-b434-42d5-9892-340ceb3f041e",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\impact_new_2_a_new_sheet.png": {
+    "time": 1691033100000,
+    "uuid": "b5559568-e5dd-4c2f-90b1-438495bede10",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\lightning_purple_2_sheet.png": {
+    "time": 1691033100000,
+    "uuid": "dc92b738-855d-4a05-88c2-53f5d223c029",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\M_Flash_01.png": {
+    "time": 1691033100000,
+    "uuid": "327c9438-9316-4b9a-858b-1d556e7f9fff",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\M_Heal_01.png": {
+    "time": 1691033100000,
+    "uuid": "0b73391e-a672-4728-84b2-0af6d0e70419",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Lightningblue1x5.png": {
+    "time": 1691033100000,
+    "uuid": "02780b01-c082-40f3-b8ba-73d39193acd0",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Ring_002.png": {
+    "time": 1691033100000,
+    "uuid": "ac9dd78c-355d-45c8-bf60-1cb6b6b0e8d4",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\SharpCircle.png": {
+    "time": 1691033100000,
+    "uuid": "a1f7543b-8efb-4aa0-852d-01e06e6a72eb",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\snow_dot.png": {
+    "time": 1691033100000,
+    "uuid": "dbef2e33-9f53-4165-a2e8-79067e3364e9",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\SharpCircleGlow.png": {
+    "time": 1691033100000,
+    "uuid": "5d0ab632-b2d8-4aa9-89eb-323b9f4ae7a4",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\Rock01.png": {
+    "time": 1691033100000,
+    "uuid": "366a16d1-1d98-47ac-b2d5-d35a3850d8d1",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\vulcan_projectile.png": {
+    "time": 1691033100000,
+    "uuid": "3a8abb8f-3ec7-4089-9d18-f01091197cd6",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\storm_sharpshock01.png": {
+    "time": 1691033100000,
+    "uuid": "b8bc0962-2ec0-42af-9e1b-956471d3be04",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\wakka02.png": {
+    "time": 1691033100000,
+    "uuid": "3e008cf5-e7fe-4227-9a4b-d35d7f82d22d",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\wavering02_02.png": {
+    "time": 1691033100000,
+    "uuid": "dd5f61ee-6583-4076-96ea-338f4cbd0a5d",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\WFX_T_MF Side RIFLE1 A8.png": {
+    "time": 1691033100000,
+    "uuid": "d24abd06-a293-4463-9888-5eb8d9c865ae",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\won-light-up-sb.png": {
+    "time": 1691033100000,
+    "uuid": "7cfbe3b6-30ee-4541-a2ad-b30af12d735b",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule-001.mtl.meta": {
+    "time": 1696902189180.4026
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule-001.mtl": {
+    "time": 1696902213817.5908,
+    "uuid": "14be7286-baf1-49e1-90b6-85a1563042db",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule-002.mtl.meta": {
+    "time": 1696902189940.1719
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule-002.mtl": {
+    "time": 1696902138954.0686,
+    "uuid": "320206d5-44a0-41d3-9673-30867fbf957b",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule-003.mtl.meta": {
+    "time": 1696902190763.9055
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule-003.mtl": {
+    "time": 1697091148633.8994,
+    "uuid": "6eeee5e4-8040-4ca5-bd6b-4e0a05ac2892",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule-004.mtl.meta": {
+    "time": 1696902191577.6677
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-capsule-004.mtl": {
+    "time": 1696902138954.0686,
+    "uuid": "a35af331-21e5-4986-8edb-5c24a5b06a57",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\3.png.meta": {
+    "time": 1696902551654.5261
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\youanzong.png.meta": {
+    "time": 1696902551655.526
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\3.png": {
+    "time": 1691033102000,
+    "uuid": "29c67eec-ec81-402c-aa1a-0dfaaab4fce3",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\materialTexture\\youanzong.png": {
+    "time": 1691033102000,
+    "uuid": "1e019a40-bbfb-4014-b747-307a918dfb50",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-plane.mtl.meta": {
+    "time": 1696902563036.6836
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-plane.mtl": {
+    "time": 1696902587082.7612,
+    "uuid": "f9ed3ec8-4488-4d5e-9a8a-240210d6d3d5",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src.meta": {
+    "time": 1696902707513.6055
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src": {
+    "time": 1697078471627.301,
+    "uuid": "760b5a51-a3d6-4f4a-af77-668229d633f2",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\resources.meta": {
+    "time": 1696902715017.684
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\resources": {
+    "time": 1696902715014.6836,
+    "uuid": "652876d4-ff30-402c-8e88-8609d7d142fb",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component.meta": {
+    "time": 1696902728370.4263
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component": {
+    "time": 1697009229629.1511,
+    "uuid": "7f9a83d0-bfa2-4d40-8eb0-04c6a409a91a",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\CameraControllerComp.ts.meta": {
+    "time": 1696902754276.3994
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\CameraControllerComp.ts": {
+    "time": 1697103927653.986,
+    "uuid": "cc87237e-205a-4f42-ae6c-ff2577360aee",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\data": {
+    "time": 1696905355683.4995,
+    "uuid": "368103ba-e2dc-4cfe-8142-3ca6463b4317",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\GlobalConst.ts": {
+    "time": 1697102957314.725,
+    "uuid": "75dd961c-42cf-447d-88bd-3582c9b45071",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\FreeCamera.ts": {
+    "time": 1696995416447.0112,
+    "uuid": "4f57a5b6-4aa8-4f6c-85fc-7c4725696b9b",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\OperateComp.ts": {
+    "time": 1697103499054.4634,
+    "uuid": "ffbcc7d9-0d17-4ef7-9350-15c4448d7885",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\data.meta": {
+    "time": 1696905993463.0278
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\GlobalConst.ts.meta": {
+    "time": 1696905993467.0266
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\FreeCamera.ts.meta": {
+    "time": 1696905993467.0266
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\OperateComp.ts.meta": {
+    "time": 1696905993468.0261
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\scene.scene": {
+    "time": 1697091236978.1118,
+    "uuid": "d97e8b9c-b22b-4e1f-89b7-2b657e77008c",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\scene.scene.meta": {
+    "time": 1696903631033.6855
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\TestScreenInputComp.ts.meta": {
+    "time": 1696907955086.879
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\TestScreenInputComp.ts": {
+    "time": 1696909221043.5696,
+    "uuid": "c57f6add-4e03-46aa-ba35-6612b25d07f2",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework.meta": {
+    "time": 1696925269016.763
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\msg.meta": {
+    "time": 1696925269017.7595
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\csv2json.ts.meta": {
+    "time": 1695119029835.2627
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\csvManager.ts.meta": {
+    "time": 1695119029837.2622
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\Handler.ts.meta": {
+    "time": 1695710878659.2417
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\localConfig.ts.meta": {
+    "time": 1695119029838.2617
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\Log.ts.meta": {
+    "time": 1695376104490.4888
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\poolManager.ts.meta": {
+    "time": 1695119029840.262
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\resourceUtil.ts.meta": {
+    "time": 1695119029843.26
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\storageManager.ts.meta": {
+    "time": 1695119029844.2603
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\tips.ts.meta": {
+    "time": 1695119029845.2593
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\uiManager.ts.meta": {
+    "time": 1695119029846.2593
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\util.ts.meta": {
+    "time": 1695119029847.2585
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\msg\\msg.ts.meta": {
+    "time": 1690249832387.6663
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\msg\\MsgEvent.ts.meta": {
+    "time": 1696925269033.7546
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework": {
+    "time": 1696920370889.9705,
+    "uuid": "33f25cab-8e85-45b9-8d8f-16d023930905",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\msg": {
+    "time": 1696925269012.7617,
+    "uuid": "838a2b41-da79-4cee-a742-4ef897785aa6",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\csv2json.ts": {
+    "time": 1695352794146.5425,
+    "uuid": "f6b651fc-4c42-4898-9559-6c5dae96690b",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\csvManager.ts": {
+    "time": 1695724289910.4155,
+    "uuid": "ee0573b6-30af-4fc0-81ef-aee04392ec92",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\Handler.ts": {
+    "time": 1695710783036.929,
+    "uuid": "b7951bd6-520d-4269-bd4c-cf793dedceba",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\localConfig.ts": {
+    "time": 1695724273331.3064,
+    "uuid": "590352bc-1baa-4b5e-bfa4-1dda4a538d2b",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\Log.ts": {
+    "time": 1695375909816.5493,
+    "uuid": "9163ff35-af8f-46dc-9ba7-888b8f140736",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\poolManager.ts": {
+    "time": 1695608760064.4575,
+    "uuid": "a63d58d5-0bc5-492c-a375-c6874452b659",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\resourceUtil.ts": {
+    "time": 1695609277701.4163,
+    "uuid": "fa19f3b4-8049-4474-bc5c-5c713ecf9c36",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\storageManager.ts": {
+    "time": 1695707383786.6533,
+    "uuid": "cceebd43-e948-4cc9-9a55-fcc637af7f82",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\tips.ts": {
+    "time": 1695711393135.3691,
+    "uuid": "cefadf31-8eb1-4a32-bfd6-4337e95d9385",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\uiManager.ts": {
+    "time": 1695692090868.5837,
+    "uuid": "25e11b88-2be8-4ab2-9b0e-d75e1334f54e",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\framework\\util.ts": {
+    "time": 1697102994535.592,
+    "uuid": "2f005d0c-891d-4440-8fdd-79138a32605b",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\msg\\msg.ts": {
+    "time": 1696920558073.9802,
+    "uuid": "67a3898e-4963-47d9-8023-aa72003bf7e9",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\msg\\MsgEvent.ts": {
+    "time": 1697103411763.574,
+    "uuid": "7e300cab-4364-4f07-bac5-6c81beb6a56e",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\MapOperateComp.ts.meta": {
+    "time": 1697007079128.5696
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\component\\MapOperateComp.ts": {
+    "time": 1697105676830.2197,
+    "uuid": "bb0fc3bf-4017-49e7-8f07-3f0074c953c2",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\res.ts.meta": {
+    "time": 1697078471639.2974
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\src\\res.ts": {
+    "time": 1697078344798.6116,
+    "uuid": "fea4ba00-06b9-492f-a040-c470d9d90c45",
+    "missing": false
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-sphere-instancing.mtl.meta": {
+    "time": 1697091186996.03
+  },
+  "D:\\cocos_work\\games\\SimulateCity\\assets\\res\\material\\standard-material-sphere-instancing.mtl": {
+    "time": 1697091234258.506,
+    "uuid": "e2a6418f-8324-420c-9c73-cd12b0b5bd82",
+    "missing": false
+  }
+}
