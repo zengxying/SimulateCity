@@ -234,8 +234,8 @@ export class MapOperateComp extends Component {
     }
 
     private _upadtePosition() {
-        Vec3.transformQuat(v3_1, this._velocity, this.node.rotation);
-        Vec3.scaleAndAdd(this._position, this._position, v3_1, this._speedScale);
+        // Vec3.transformQuat(v3_1, this._velocity, this.node.rotation); //不需要跟旋转有关系，这里只需要按照世界坐标移动就好不然旋转后显示的效果就不对了
+        Vec3.scaleAndAdd(this._position, this._position, this._velocity, this._speedScale);
         this._velocity.set();
     }
 
