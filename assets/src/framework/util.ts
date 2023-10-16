@@ -1,8 +1,24 @@
 import { _decorator, builtinResMgr, Color, Component, Label, Material, MeshRenderer, misc, Node, Primitive, Texture2D, tween, v3, Vec2, Vec3 } from "cc";
 import { v3_2, v3_1, GlobalConst } from "../GlobalConst";
-import { CameraControllerComp } from "../component/CameraControllerComp";
+import { CameraControllerComp } from "../component/mapOp/CameraControllerComp";
 const { ccclass, property } = _decorator;
 const tmpV3 = v3();
+
+const material = new Material();
+((mat:Material) => {
+
+    mat._uuid = "TestSphere01";
+    mat.initialize({
+        effectName: 'builtin-unlit',
+        defines: {
+            USE_TEXTURE: true,
+            USE_INSTANCING: true
+        },
+    });
+    const whiteTexture = builtinResMgr.get<Texture2D>('white-texture');
+    mat.setProperty("mainTexture", whiteTexture, 0);
+})(material)
+
 @ccclass("Util")
 export class Util {
     /**
@@ -841,7 +857,7 @@ export class Util {
 
 
     // 计算向量夹角的函数
-    static getAngleBetweenVectors(vectorA:Vec2, vectorB:Vec2) {
+    static getAngleBetweenVectors(vectorA: Vec2, vectorB: Vec2) {
         // 使用向量的点积和模长计算夹角的余弦值
         const dotProduct = Vec2.dot(vectorA, vectorB);
         const magnitudeA = vectorA.length();
@@ -860,7 +876,7 @@ export class Util {
     }
 
     // 计算向量夹角的函数
-    static getAngleXVectors(vectorA:Vec2) {
+    static getAngleXVectors(vectorA: Vec2) {
         // 使用向量的点积和模长计算夹角的余弦值
         let vectorB = Vec2.UNIT_X;
         const dotProduct = Vec2.dot(vectorA, vectorB);
@@ -883,44 +899,33 @@ export class Util {
      * @param vec2 
      * @returns 
      */
-    public static getScreenToWorld(vec2:Vec2, vec3:Vec3, lv:number = 0.5){
+    public static getScreenToWorld(vec2: Vec2, vec3: Vec3, lv: number = 0.5) {
 
         tmpV3.set(vec2.x, vec2.y, lv);
-        return GlobalConst.camera.screenToWorld(tmpV3,vec3);
+        return GlobalConst.camera.screenToWorld(tmpV3, vec3);
     }
 
 
-    public static createSphere(parent:Node, radius:number, pos:Vec3){
+    public static createSphere(parent: Node, radius: number, pos: Vec3) {
         let node = new Node("Test球");
         node.parent = parent;
         node.setPosition(pos);
 
         let mesh = new Primitive(Primitive.PrimitiveType.SPHERE);
-        
+
         //@ts-ignore
         mesh.info = radius;
         mesh.onLoaded();
         let meshRender = node.addComponent(MeshRenderer);
         meshRender.mesh = mesh;
 
-        const material = new Material();
 
-        material._uuid = "TestSphere01";
-        material.initialize({
-            effectName: 'builtin-unlit',
-            defines: { 
-                USE_TEXTURE: true ,
-                USE_INSTANCING: true 
-            },
-        });
-        const whiteTexture = builtinResMgr.get<Texture2D>('white-texture');
-        material.setProperty("mainTexture", whiteTexture, 0);
         meshRender.material = material;
-        
+
 
         node.layer = parent.layer;
 
         // node.setScale(radius, radius, radius);
     }
-  
+
 }

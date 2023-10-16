@@ -1,13 +1,8 @@
-import { _decorator, Camera, CameraComponent, Component, director, EventTouch, game, Node, Quat, sp, Vec2, Vec3 } from 'cc';
-import { GlobalConst, v3_1, v3_2 } from '../GlobalConst';
-import { Msg } from '../msg/msg';
-import { MsgEvent } from '../msg/MsgEvent';
-import { Log } from '../framework/Log';
+import { _decorator, Camera, CameraComponent, Component, director, EventTouch, game, misc, Node, Quat, sp, Vec2, Vec3 } from 'cc';
+import { GlobalConst, v3_1, v3_2 } from '../../GlobalConst';
+import { Msg } from '../../msg/msg';
+import { MsgEvent } from '../../msg/MsgEvent';
 const { ccclass, property } = _decorator;
-
-const v2_1 = new Vec2();
-const v2_2 = new Vec2();
-
 
 const qt_1 = new Quat();
 const forward = new Vec3();
@@ -35,7 +30,9 @@ export class CameraControllerComp extends Component {
     private _speedScale = 1;
 
     distanceY: number = 200;
-    private _rotation: Quat = new Quat();
+    private _euler: Vec3 = new Vec3();
+
+    private _rotaRatio: number = 0.05;
 
     // 移动  单指
 
@@ -51,60 +48,26 @@ export class CameraControllerComp extends Component {
         CameraControllerComp.ins = this;
         GlobalConst.camera = this._camera = this.node.getComponentInChildren(CameraComponent);
         Vec3.copy(this._position, this.node.getPosition());
-        Quat.copy(this._rotation,  this._camera.node.rotation);
+        Vec3.copy(this._euler,  this._camera.node.eulerAngles);
 
     }
 
     protected onEnable(): void {
         // Msg.on(MsgEvent.OP_TOUCH_MOVE, this.moveView.bind(this));
-        // Msg.on(MsgEvent.OP_TOUCH_ROTA, this.rotaView.bind(this));
+        Msg.on(MsgEvent.OP_TOUCH_ROTA, this.rotaView.bind(this));
         Msg.on(MsgEvent.OP_TOUCH_SCALE, this.scaleView.bind(this));
     }
 
     protected onDisable(): void {
-        Msg.off(MsgEvent.OP_TOUCH_MOVE);
-        Msg.off(MsgEvent.OP_TOUCH_ROTA);
         Msg.off(MsgEvent.OP_TOUCH_SCALE);
+        Msg.off(MsgEvent.OP_TOUCH_ROTA);
     }
 
-    start() {
-
-    }
-
-
-    /** 移动 */
-    public moveView(vec2:Vec2) {
-        console.log("转换出来的坐标:vec2 vec2", vec2.x, vec2.y);
-        const scale = 1 + this._position.y / this.distanceY * 10;
-        vec2.multiplyScalar(scale);
-        this._velocity.set(vec2.x, 0, vec2.y);
-        // this._camera.screenToWorld(this._velocity,this._velocity);
-        // Vec3.subtract(this._velocity, this._velocity, this._position);
-    }
-
-    /** 移动 */
-    public moveView2(vec2:Vec2) {
-        console.log("转换出来的坐标:vec2 vec2", vec2.x, vec2.y);
-        const scale = 1 + this._position.y / this.distanceY * 10;
-        vec2.multiplyScalar(scale);
-        this._velocity.set(vec2.x, 0, vec2.y);
-        // this._camera.screenToWorld(this._velocity,this._velocity);
-        // Vec3.subtract(this._velocity, this._velocity, this._position);
-    }
-
-    public static ins:CameraControllerComp;
-    public static camera:Camera;
-    public static test(vec2:Vec2){
-
-        // console.log("转换出来的坐标:vec2 vec2", vec2.x, vec2.y);
-        // v3_2.set(vec2.x, vec2.y, 0);
-        // this.ins._camera.screenToWorld(v3_2,v3_1);
-        // console.log("转换出来的坐标:", v3_1.x, v3_1.y, v3_1.z);
-    }
+    
 
     /** 缩放 */
     public scaleView(speed: number) {
-        Log.log("scaleView -- speed:"+speed);
+        // Log.log("scaleView -- speed:"+speed);
         if(Math.abs(this._position.y + speed) < this.distanceY){
             Vec3.transformQuat(v3_1, Vec3.UNIT_Z, this._camera.node.rotation);
             Vec3.scaleAndAdd(this._position, this.node.position, v3_1, speed);
@@ -116,14 +79,20 @@ export class CameraControllerComp extends Component {
         
         let x = vec2.x;
         let y = vec2.y;
-        
-        Quat.rotateAround(this._rotation, this._rotation, this._camera.node.forward, y);
-        Quat.rotateAround(this._rotation, this._rotation, this._camera.node.right, x);
-
-        // if (this._eulerP.x + x < -30 && this._eulerP.x + x > -90) { // x处角度的旋转限制 测试使用
-        //     this._eulerP.x += x;
-        // }
-        // this._eulerP.y += y;
+        x = this._euler.x + x * this._rotaRatio;
+        const max = -30;
+        const min = -90;
+        if(x < min || x > max){
+            if(x < min){
+                this._euler.x = min;
+            }
+            if(x > max){
+                this._euler.x = max;
+            }
+            console.log("旋转角度超标了");
+            return;
+        }
+        this._euler.x = x;
     }
 
     public update(dt: number) {
@@ -154,9 +123,42 @@ export class CameraControllerComp extends Component {
         }
 
         // rotation
-        Quat.slerp(qt_1, this._camera.node.rotation, this._rotation, t);
+        Quat.fromEuler(qt_1, this._euler.x, this._euler.y, this._euler.z);
+        Quat.slerp(qt_1, this._camera.node.rotation, qt_1, t);
         this._camera.node.rotation = qt_1;
         this._velocity.set();
+    }
+
+
+    //===================================================== 废弃代码============================
+    /** 移动 */
+    public moveView(vec2:Vec2) {
+        console.log("转换出来的坐标:vec2 vec2", vec2.x, vec2.y);
+        const scale = 1 + this._position.y / this.distanceY * 10;
+        vec2.multiplyScalar(scale);
+        this._velocity.set(vec2.x, 0, vec2.y);
+        // this._camera.screenToWorld(this._velocity,this._velocity);
+        // Vec3.subtract(this._velocity, this._velocity, this._position);
+    }
+
+    /** 移动 */
+    public moveView2(vec2:Vec2) {
+        console.log("转换出来的坐标:vec2 vec2", vec2.x, vec2.y);
+        const scale = 1 + this._position.y / this.distanceY * 10;
+        vec2.multiplyScalar(scale);
+        this._velocity.set(vec2.x, 0, vec2.y);
+        // this._camera.screenToWorld(this._velocity,this._velocity);
+        // Vec3.subtract(this._velocity, this._velocity, this._position);
+    }
+
+    public static ins:CameraControllerComp;
+    public static camera:Camera;
+    public static test(vec2:Vec2){
+
+        // console.log("转换出来的坐标:vec2 vec2", vec2.x, vec2.y);
+        // v3_2.set(vec2.x, vec2.y, 0);
+        // this.ins._camera.screenToWorld(v3_2,v3_1);
+        // console.log("转换出来的坐标:", v3_1.x, v3_1.y, v3_1.z);
     }
 }
 

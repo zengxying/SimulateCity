@@ -1,10 +1,9 @@
-import { _decorator, Camera, CameraComponent, Component, director, EventTouch, game, geometry, MeshRenderer, misc, Node, PhysicsSystem, Quat, screen, sp, Vec2, Vec3 } from 'cc';
-import { GlobalConst, ray, v2_1, v3_1, v3_2, v3_3 } from '../GlobalConst';
-import { Msg } from '../msg/msg';
-import { MsgEvent } from '../msg/MsgEvent';
-import { CameraControllerComp } from './CameraControllerComp';
-import { Res } from '../res';
-import { Util } from '../framework/util';
+import { _decorator, Camera, CameraComponent, CanvasComponent, Component, director, EventTouch, game, geometry, MeshRenderer, misc, Node, PhysicsSystem, Quat, screen, sp, Vec2, Vec3 } from 'cc';
+import { GlobalConst, ray, v3_1, v3_2, v3_3 } from '../../GlobalConst';
+import { Util } from '../../framework/util';
+import { MsgEvent } from '../../msg/MsgEvent';
+import { Msg } from '../../msg/msg';
+
 const { ccclass, property } = _decorator;
 
 const qt_1 = new Quat();
@@ -34,6 +33,7 @@ export class MapOperateComp extends Component {
 
     private _preHit3DPoint: Vec3 = new Vec3();
     private _noteTouchePoint: Vec2 = new Vec2();
+    private _rotaRatio: number = 0.5;
 
     protected onLoad(): void {
         MapOperateComp.ins = this;
@@ -47,7 +47,7 @@ export class MapOperateComp extends Component {
         Msg.on(MsgEvent.OP_TOUCH_ROTA, this.rotaView.bind(this));
         Msg.on(MsgEvent.OP_TOUCH_MOVE, this.moveView.bind(this));
         Msg.on(MsgEvent.OP_TOUCH_MOVE_MAP, this.noteMoveTochePoint.bind(this));
-        Msg.on(MsgEvent.OP_TOUCH_START, this.calculateHitPoint.bind(this));
+        Msg.on(MsgEvent.OP_RESET_CLICK_POINT, this.calculateHitPoint.bind(this));
     }
 
     protected onDisable(): void {
@@ -94,8 +94,6 @@ export class MapOperateComp extends Component {
 
     private moveView(vec2: Vec2) {
         this.resetRotaAxisDirty();
-
-        // this._velocity.set(vec2.x, 0, vec2.y);
     }
 
     /**
@@ -103,15 +101,21 @@ export class MapOperateComp extends Component {
      */
     public calculateRotaAxis() {
         if (!this._rotaAxisDirty) return;
+
+        
+        
         this._rotaAxisDirty = false;
         const camera = GlobalConst.camera;
+
         camera.screenPointToRay(screen.windowSize.width / 2, screen.windowSize.height / 2, this._cameraRay)
-        console.time("射线检测时间：");
+        // console.time("射线检测时间：");
 
         let dis = geometry.intersect.rayModel(this._cameraRay, this._meshRender.model);
         if (dis) {
             this._cameraRay.computeHit(this._centerPoint, dis); // 性能要好些
         }
+
+        // 暂时不用物理检测，比较耗时
         // if (PhysicsSystem.instance.raycast(this._cameraRay)) {
         //     const r = PhysicsSystem.instance.raycastResults;
         //     for (let i = 0; i < r.length; i++) {
@@ -124,16 +128,15 @@ export class MapOperateComp extends Component {
         //     console.log("射线检测:", r);
         // } else {
         //     console.log("射线检测:fail");
-
         // }
-        console.timeEnd("射线检测时间：");
-        console.time("射线检测时间 01：");
+        // console.timeEnd("射线检测时间：");
+        // console.time("射线检测时间 01：");
         if (this.sphere) {
             this.sphere.setPosition(this._centerPoint);
         }
         this.startAngle = 0;
         this.node.getPosition(this.originPos);
-        console.timeEnd("射线检测时间 01：");
+        // console.timeEnd("射线检测时间 01：");
     }
 
 
@@ -155,6 +158,67 @@ export class MapOperateComp extends Component {
         // }
         // this._eulerP.y += y;
     }
+
+
+
+    private startAngle: number = 0;
+    private originPos: Vec3 = new Vec3();
+    setRotaPos(addAngle: number) {
+        
+        addAngle *= this._rotaRatio;
+        this._eulerP.y -= addAngle; // 一个旋转角度的计算不对也会导致地图展示出来不是想要的样子
+
+        this.startAngle += addAngle;
+
+        // 获取物体相对于旋转中心的位置
+        Vec3.subtract(v3_1, this.originPos, this._centerPoint);
+        const localPosition = v3_1;
+        // const localPosition = this.node.getPosition(v3_1).subtract(this._centerPoint);
+
+        // 计算旋转后的位置  每次旋转的值加上本身的旋转度数
+        const angle = misc.degreesToRadians(this.startAngle); // 转换成弧度 
+        const cosAngle = Math.cos(angle);
+        const sinAngle = Math.sin(angle);
+        const newX = localPosition.x * cosAngle - localPosition.z * sinAngle;
+        const newZ = localPosition.x * sinAngle + localPosition.z * cosAngle;
+
+        // 更新物体的位置
+        this._position.set(newX + this._centerPoint.x, this._position.y, newZ + this._centerPoint.z);
+
+        Util.createSphere(this.node.parent, 0.5, this._position);
+        // Res.instNode(this.sphere, this.node.parent, this._position);
+
+        // 使物体朝向旋转中心
+        // v3_1.set(this.node.eulerAngles)
+        // this.node.lookAt(this._centerPoint, Vec3.UP);
+        // this._eulerP.set(this.node.eulerAngles);
+        // this.node.eulerAngles = v3_1;
+    }
+
+    public update(dt: number) {
+        this.moveMap(this._noteTouchePoint)
+        const t = Math.min(dt / this.damp, 1);
+        this.updateRotation(t);
+        // // position
+        this._upadtePosition();
+        Vec3.lerp(v3_1, this.node.getPosition(), this._position, t);
+        this.node.setPosition(v3_1);
+    }
+
+    private _upadtePosition() {
+        // Vec3.transformQuat(v3_1, this._velocity, this.node.rotation); //不需要跟旋转有关系，这里只需要按照世界坐标移动就好不然旋转后显示的效果就不对了
+        Vec3.scaleAndAdd(this._position, this._position, this._velocity, this._speedScale);
+        this._velocity.set();
+    }
+
+    private updateRotation(t: number) { 
+        // rotation
+        Quat.fromEuler(qt_1, this._eulerP.x, this._eulerP.y, this._eulerP.z);
+        Quat.slerp(qt_1, this.node.rotation, qt_1, t);
+        this.node.rotation = qt_1;
+    }
+
+    // ============================================== 废弃代码====================
     private _calculateRotaPos2(y: number) {
         this._eulerP.y += y;
 
@@ -186,64 +250,6 @@ export class MapOperateComp extends Component {
         // this.node.lookAt(this._centerPoint, Vec3.UP);
         // this._eulerP.set(this.node.eulerAngles);
         // this.node.eulerAngles = v3_1;
-    }
-
-
-    private startAngle: number = 0;
-    private originPos: Vec3 = new Vec3();
-    setRotaPos(addAngle: number) {
-        this._eulerP.y -= addAngle; // 一个旋转角度的计算不对也会导致地图展示出来不是想要的样子
-
-        this.startAngle += addAngle;
-
-        // 获取物体相对于旋转中心的位置
-        Vec3.subtract(v3_1, this.originPos, this._centerPoint);
-        const localPosition = v3_1;
-        // const localPosition = this.node.getPosition(v3_1).subtract(this._centerPoint);
-
-        // 计算旋转后的位置  每次旋转的值加上本身的旋转度数
-        const angle = misc.degreesToRadians(this.startAngle); // 转换成弧度 
-        const cosAngle = Math.cos(angle);
-        const sinAngle = Math.sin(angle);
-        const newX = localPosition.x * cosAngle - localPosition.z * sinAngle;
-        const newZ = localPosition.x * sinAngle + localPosition.z * cosAngle;
-
-        // 更新物体的位置
-        this._position.set(newX + this._centerPoint.x, this._position.y, newZ + this._centerPoint.z);
-
-        Util.createSphere(this.node.parent, 0.5, this._position);
-        // Res.instNode(this.sphere, this.node.parent, this._position);
-
-        console.log(`center point : x_>${this._centerPoint.x} y_>${this._centerPoint.y} z_>${this._centerPoint.z}`)
-        console.log(`center point : x_>${this._centerPoint.x} y_>${this._centerPoint.y} z_>${this._centerPoint.z}`)
-        // 使物体朝向旋转中心
-        // v3_1.set(this.node.eulerAngles)
-        // this.node.lookAt(this._centerPoint, Vec3.UP);
-        // this._eulerP.set(this.node.eulerAngles);
-        // this.node.eulerAngles = v3_1;
-    }
-
-    public update(dt: number) {
-        this.moveMap(this._noteTouchePoint)
-        const t = Math.min(dt / this.damp, 1);
-        this.updateRotation(t);
-        // // position
-        this._upadtePosition();
-        Vec3.lerp(v3_1, this.node.getPosition(), this._position, t);
-        this.node.setPosition(v3_1);
-    }
-
-    private _upadtePosition() {
-        // Vec3.transformQuat(v3_1, this._velocity, this.node.rotation); //不需要跟旋转有关系，这里只需要按照世界坐标移动就好不然旋转后显示的效果就不对了
-        Vec3.scaleAndAdd(this._position, this._position, this._velocity, this._speedScale);
-        this._velocity.set();
-    }
-
-    private updateRotation(t: number) { //TODO 参考Laya吧 
-        // rotation
-        Quat.fromEuler(qt_1, this._eulerP.x, this._eulerP.y, this._eulerP.z);
-        Quat.slerp(qt_1, this.node.rotation, qt_1, t);
-        this.node.rotation = qt_1;
     }
 }
 

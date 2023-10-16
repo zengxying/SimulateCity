@@ -1,5 +1,5 @@
 import { _decorator, Component, Quat, Vec2, Vec3, Input, game, EventTouch, EventMouse, input, EventKeyboard, KeyCode, v2 } from 'cc';
-import { v3_1, v2_1, v2_2 } from '../GlobalConst';
+import { v3_1, v2_1, v2_2 } from '../../GlobalConst';
 const { ccclass, property } = _decorator;
 
 

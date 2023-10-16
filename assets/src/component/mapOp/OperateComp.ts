@@ -1,13 +1,14 @@
 import { _decorator, Component, Quat, Vec2, Vec3, Input, game, EventTouch, EventMouse, input, EventKeyboard, KeyCode, v2, misc, macro, geometry } from 'cc';
-import { GlobalConst, ray, v2_1, v2_2, v2_3, v2_4, v3_1, v3_2 } from '../GlobalConst';
-import { Msg } from '../msg/msg';
-import { MsgEvent } from '../msg/MsgEvent';
-import { Util } from '../framework/util';
-import { Log } from '../framework/Log';
+
 import { CameraControllerComp } from './CameraControllerComp';
 import { MapOperateComp } from './MapOperateComp';
+import { GlobalConst, v2_2, v2_1, v2_3, v2_4, v3_1, v3_2 } from '../../GlobalConst';
+import { Util } from '../../framework/util';
+import { MsgEvent } from '../../msg/MsgEvent';
+import { Msg } from '../../msg/msg';
 const { ccclass, property } = _decorator;
 
+const lv = 0.05;
 
 
 /**
@@ -40,6 +41,8 @@ export class OperateComp extends Component {
 
     // 手指滑动方向
     touchDir: Vec2 = new Vec2();
+
+    private _continueMoveDirty: boolean = false;
 
 
     public onLoad() {
@@ -81,6 +84,7 @@ export class OperateComp extends Component {
     public onTouchStart(e: EventTouch) {
         if (GlobalConst.interruptOp) return console.warn("中断操作中...............");
         // if (game.canvas.requestPointerLock) { game.canvas.requestPointerLock(); }
+        this._continueMoveDirty = false;
         const touches = e.getAllTouches();
 
         CameraControllerComp.test(e.getLocation());
@@ -88,10 +92,10 @@ export class OperateComp extends Component {
 
         } else {
             touches[0].getLocation(v2_2);
-            Msg.emit(MsgEvent.OP_TOUCH_START, v2_2);
+            Msg.emit(MsgEvent.OP_RESET_CLICK_POINT, v2_2);
         }
 
-    
+
     }
 
     public onTouchMove(e: EventTouch) {
@@ -116,30 +120,26 @@ export class OperateComp extends Component {
             touches[0].getLocation(v2_1);
             touches[1].getLocation(v2_2);
             let disCur = Vec2.distance(v2_1, v2_2);
-            Vec2.subtract(v2_2, v2_2, v2_1);
-            let realAngle = Util.getAngleBetweenVectors(v2_3, v2_2);// y轴旋转
-
-            // let angle = 0;
+            
             let scale = 0;
             let rota = 0;
-            // if (curY > 0 && preY > 0) {
-            //     angle = realAngle;
-            //     // rota = Math.min(curY, preY);
-            // } else if (curY < 0 && preY < 0) {
-            //     angle = realAngle;
-            //     // rota = Math.max(curY, preY);
-            // } else {
-            // }
+            if (curY > 0 && preY > 0) {
+                rota = Math.min(curY, preY);
+            } else if (curY < 0 && preY < 0) {
+                rota = Math.max(curY, preY);
+            }
             scale = disPre - disCur;
 
 
             v2_2.set(rota, angle);
             Msg.emit(MsgEvent.OP_TOUCH_SCALE, scale * 0.1);
             Msg.emit(MsgEvent.OP_TOUCH_ROTA, v2_2);
-            Log.log("on touch move:realAngle---> ", angle, v2_4.x, v2_4.y);
+            // Log.log("on touch move:realAngle---> ", angle, v2_4.x, v2_4.y);
         } else {
-            
-            const lv = 0.05;
+            if (this._continueMoveDirty) {
+                this._continueMoveDirty = false;
+                return;
+            }
             touches[0].getPreviousLocation(v2_1);
             Util.getScreenToWorld(v2_1, v3_1, lv);
 
@@ -152,36 +152,24 @@ export class OperateComp extends Component {
 
             Msg.emit(MsgEvent.OP_TOUCH_MOVE, v2_1);
             Msg.emit(MsgEvent.OP_TOUCH_MOVE_MAP, v2_2);
-
-            touches[0].getStartLocation(v2_1);
-            Util.getScreenToWorld(v2_1, v3_1, lv);
-
-
-            touches[0].getLocation(v2_2);
-            Util.getScreenToWorld(v2_2, v3_2, lv);
-
-            Vec3.subtract(v3_2, v3_1, v3_2);
-            let dis = Vec3.distance(v3_1, v3_2);
-            console.log("总的移动长度：----> " + dis);
+            
         }
-        // if (v2_1.x > game.canvas.width * 0.4) { // rotation
-        //     e.getDelta(v2_2);
-        //     this._eulerP.y -= v2_2.x * this.rotateSpeed * 0.1;
-        //     this._eulerP.x += v2_2.y * this.rotateSpeed * 0.1;
-        // } else { // position
-        //     e.getDelta(v2_2);
-        //     this._eulerP.y -= v2_2.x * this.rotateSpeed * 0.1;
-        //     this._eulerP.x += v2_2.y * this.rotateSpeed * 0.1;
-        // }
     }
 
     public onTouchEnd(e: EventTouch) {
         if (GlobalConst.interruptOp) return console.warn("中断操作中...............");
         // if (document.exitPointerLock) { document.exitPointerLock(); }
         const touches = e.getAllTouches();
-        if (touches.length <= 1) {
-            Msg.emit(MsgEvent.OP_TOUCH_MOVE, v2_1.set(0, 0));
+        // console.log("onTouchEnd:-->" + touches.length);
+        if(touches.length >= 1){ // 重置记录触屏点，更新射线检测点，这样双指操作中抬起一个手指不会导致屏幕移动           
+            touches[0].getLocation(v2_2);
+            Msg.emit(MsgEvent.OP_RESET_CLICK_POINT, v2_2);
+            Util.getScreenToWorld(v2_2, v3_2, lv);
+            Msg.emit(MsgEvent.OP_TOUCH_MOVE_MAP, v2_2);
         }
+
+        this._continueMoveDirty = true;
+        Msg.emit(MsgEvent.OP_TOUCH_MOVE, v2_1.set(0, 0));
     }
 
     private keys = [];
