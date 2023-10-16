@@ -1,11 +1,11 @@
-import { _decorator, Component, Quat, Vec2, Vec3, Input, game, EventTouch, EventMouse, input, EventKeyboard, KeyCode, v2, misc, macro, geometry } from 'cc';
+import { _decorator, Component, Vec2, input, Input, EventMouse, EventTouch, misc, Vec3, EventKeyboard, KeyCode, v2 } from "cc";
+import { GlobalConst, v2_2, v2_1, v2_3, v2_4, v3_1, v3_2 } from "../GlobalConst";
+import { Util } from "../framework/util";
+import { MsgEvent } from "../msg/MsgEvent";
+import { Msg } from "../msg/msg";
+import { CameraControllerComp } from "./mapOp/CameraControllerComp";
+import { MapOperateComp } from "./mapOp/MapOperateComp";
 
-import { CameraControllerComp } from './CameraControllerComp';
-import { MapOperateComp } from './MapOperateComp';
-import { GlobalConst, v2_2, v2_1, v2_3, v2_4, v3_1, v3_2 } from '../../GlobalConst';
-import { Util } from '../../framework/util';
-import { MsgEvent } from '../../msg/MsgEvent';
-import { Msg } from '../../msg/msg';
 const { ccclass, property } = _decorator;
 
 const lv = 0.05;
@@ -46,32 +46,40 @@ export class OperateComp extends Component {
 
 
     public onLoad() {
-        input.on(Input.EventType.MOUSE_WHEEL, this.onMouseWheel, this);
-        input.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
-        input.on(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
-        input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
-        input.on(Input.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
+        const inputEvent = this.getTarget();
+
+        inputEvent.on(Input.EventType.MOUSE_WHEEL, this.onMouseWheel, this);
+        inputEvent.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
+        inputEvent.on(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        inputEvent.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
+        inputEvent.on(Input.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
 
 
-        input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
-        input.on(Input.EventType.KEY_UP, this.onKeyUp, this);
+        inputEvent.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+        inputEvent.on(Input.EventType.KEY_UP, this.onKeyUp, this);
     }
 
     public onDestroy() {
-        input.off(Input.EventType.MOUSE_WHEEL, this.onMouseWheel, this);
-        input.off(Input.EventType.TOUCH_START, this.onTouchStart, this);
-        input.off(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
-        input.off(Input.EventType.TOUCH_END, this.onTouchEnd, this);
-        input.off(Input.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
+        const inputEvent = this.getTarget();
+        inputEvent.off(Input.EventType.MOUSE_WHEEL, this.onMouseWheel, this);
+        inputEvent.off(Input.EventType.TOUCH_START, this.onTouchStart, this);
+        inputEvent.off(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
+        inputEvent.off(Input.EventType.TOUCH_END, this.onTouchEnd, this);
+        inputEvent.off(Input.EventType.TOUCH_CANCEL, this.onTouchEnd, this);
 
-        input.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
-        input.off(Input.EventType.KEY_UP, this.onKeyUp, this);
+        inputEvent.off(Input.EventType.KEY_DOWN, this.onKeyDown, this);
+        inputEvent.off(Input.EventType.KEY_UP, this.onKeyUp, this);
+    }
+
+
+    protected getTarget(): any {
+        return input;
     }
 
 
 
     public onMouseWheel(e: EventMouse) {
-        if (GlobalConst.interruptOp) return console.warn("中断操作中...............");
+        if (GlobalConst.interruptMapOp) return console.warn("中断操作中...............");
         console.log(`滚轮滚动的参数 getScrollX：${e.getScrollX()}  getScrollY:${e.getScrollY()}`)
         const delta = -e.getScrollY() * this.rotaWheelSpeed * 0.1; // delta is positive when scroll down
         Msg.emit(MsgEvent.OP_TOUCH_SCALE, delta);
@@ -82,14 +90,14 @@ export class OperateComp extends Component {
     }
 
     public onTouchStart(e: EventTouch) {
-        if (GlobalConst.interruptOp) return console.warn("中断操作中...............");
+        if (GlobalConst.interruptMapOp) return console.warn("中断操作中...............");
         // if (game.canvas.requestPointerLock) { game.canvas.requestPointerLock(); }
         this._continueMoveDirty = false;
         const touches = e.getAllTouches();
 
         CameraControllerComp.test(e.getLocation());
         if (touches.length > 1) {
-
+            GlobalConst.selectBuilding = false;
         } else {
             touches[0].getLocation(v2_2);
             Msg.emit(MsgEvent.OP_RESET_CLICK_POINT, v2_2);
@@ -99,10 +107,10 @@ export class OperateComp extends Component {
     }
 
     public onTouchMove(e: EventTouch) {
-        if (GlobalConst.interruptOp) return console.warn("中断操作中...............");
+        if (GlobalConst.interruptMapOp) return console.warn("中断操作中...............");
         const touches = e.getAllTouches();
         if (touches.length > 1) {
-
+            GlobalConst.selectBuilding = false;
             touches[0].getPreviousLocation(v2_1);
             touches[1].getPreviousLocation(v2_2);
 
@@ -157,7 +165,7 @@ export class OperateComp extends Component {
     }
 
     public onTouchEnd(e: EventTouch) {
-        if (GlobalConst.interruptOp) return console.warn("中断操作中...............");
+        if (GlobalConst.interruptMapOp) return console.warn("中断操作中...............");
         // if (document.exitPointerLock) { document.exitPointerLock(); }
         const touches = e.getAllTouches();
         // console.log("onTouchEnd:-->" + touches.length);
@@ -176,7 +184,7 @@ export class OperateComp extends Component {
     // x  -1 left, +1 right   y -1 backword, +1 forward
 
     onKeyDown(event: EventKeyboard) {
-        if (GlobalConst.interruptOp) return console.warn("中断操作中...............");
+        if (GlobalConst.interruptMapOp) return console.warn("中断操作中...............");
 
         let keyCode = event.keyCode;
         if (keyCode == KeyCode.KEY_A || keyCode == KeyCode.KEY_S || keyCode == KeyCode.KEY_D || keyCode == KeyCode.KEY_W) {
@@ -196,7 +204,7 @@ export class OperateComp extends Component {
     }
 
     onKeyUp(event: EventKeyboard) {
-        if (GlobalConst.interruptOp) return console.warn("中断操作中...............");
+        if (GlobalConst.interruptMapOp) return console.warn("中断操作中...............");
 
         let keyCode = event.keyCode;
         if (keyCode == KeyCode.KEY_A || keyCode == KeyCode.KEY_S || keyCode == KeyCode.KEY_D || keyCode == KeyCode.KEY_W) {

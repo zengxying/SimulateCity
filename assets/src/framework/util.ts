@@ -1,5 +1,5 @@
-import { _decorator, builtinResMgr, Color, Component, Label, Material, MeshRenderer, misc, Node, Primitive, Texture2D, tween, v3, Vec2, Vec3 } from "cc";
-import { v3_2, v3_1, GlobalConst } from "../GlobalConst";
+import { _decorator, builtinResMgr, Color, Component, geometry, Label, Material, MeshRenderer, misc, Node, Primitive, Texture2D, tween, v3, Vec2, Vec3 } from "cc";
+import { v3_2, v3_1, GlobalConst, ray } from "../GlobalConst";
 import { CameraControllerComp } from "../component/mapOp/CameraControllerComp";
 const { ccclass, property } = _decorator;
 const tmpV3 = v3();
@@ -905,8 +905,18 @@ export class Util {
         return GlobalConst.camera.screenToWorld(tmpV3, vec3);
     }
 
+    /**
+     * 获取点击地图上的点位
+     * @param vec2 屏幕坐标
+     * @param out 点击的地图世界坐标
+     * @returns 是否点击到
+     */
+    public static calculateHitPoint(vec2: Vec2, out:Vec3) {
+        return GlobalConst.mapPanel.calculateHitPoint(vec2 ,out);
+    }
 
-    public static createSphere(parent: Node, radius: number, pos: Vec3) {
+
+    public static createSphere(parent: Node, radius: number, pos: Vec3) : Node{
         let node = new Node("Test球");
         node.parent = parent;
         node.setPosition(pos);
@@ -924,7 +934,7 @@ export class Util {
 
 
         node.layer = parent.layer;
-
+        return node;
         // node.setScale(radius, radius, radius);
     }
 

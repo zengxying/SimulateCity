@@ -1003,7 +1003,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_projection": 1,
+    "_projection": 0,
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
@@ -1179,7 +1179,7 @@
     "_id": "68RrP/xlFF1o88PuK9ClJ9"
   },
   {
-    "__type__": "c57f6rdTgNGqro1ZhKyXQfy",
+    "__type__": "68a131kUu5EELNZWNvNNZPJ",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -1187,7 +1187,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_id": "fdOovtHhBNzYuG4T05LSD1"
+    "_id": "86Y2Jb9GVHu6NsuWwj0hyM"
   },
   {
     "__type__": "cc.UITransform",

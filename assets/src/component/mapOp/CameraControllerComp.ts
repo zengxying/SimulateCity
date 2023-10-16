@@ -59,8 +59,8 @@ export class CameraControllerComp extends Component {
     }
 
     protected onDisable(): void {
-        Msg.off(MsgEvent.OP_TOUCH_SCALE);
-        Msg.off(MsgEvent.OP_TOUCH_ROTA);
+        Msg.off(MsgEvent.OP_TOUCH_SCALE, this.rotaView);
+        Msg.off(MsgEvent.OP_TOUCH_ROTA, this.scaleView);
     }
 
     
