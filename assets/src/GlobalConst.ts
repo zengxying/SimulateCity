@@ -1,4 +1,4 @@
-import { Camera, Node, Vec2, Vec3, geometry } from "cc";
+import { Camera, Node, Vec2, Vec3, geometry, mat4 } from "cc";
 import { MapOperateComp } from "./component/mapOp/MapOperateComp";
 
 export class GlobalConst {
@@ -20,8 +20,8 @@ export class GlobalConst {
     static mapPanel: MapOperateComp;
 
     // 地图格子大小
-    static mapGridWidth: number = 1;
-    static mapGridHeight: number = 1;
+    static mapGridWidth: number = 2;
+    static mapGridHeight: number = 2;
 
 }
 
@@ -35,5 +35,6 @@ export const v2_4 = new Vec2();
 export const v3_1 = new Vec3();
 export const v3_2 = new Vec3();
 export const v3_3 = new Vec3();
+export const worldMatrix = mat4();
 
 export const ray = new geometry.Ray();

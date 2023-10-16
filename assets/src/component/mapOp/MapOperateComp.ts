@@ -1,5 +1,5 @@
-import { _decorator, Camera, CameraComponent, CanvasComponent, Component, director, EventTouch, game, geometry, MeshRenderer, misc, Node, PhysicsSystem, Quat, screen, sp, Vec2, Vec3 } from 'cc';
-import { GlobalConst, ray, v3_1, v3_2, v3_3 } from '../../GlobalConst';
+import { _decorator, BoxCollider, Camera, CameraComponent, CanvasComponent, Component, director, EventTouch, game, geometry, MeshRenderer, misc, Node, PhysicsSystem, Quat, screen, sp, Vec2, Vec3 } from 'cc';
+import { GlobalConst, ray, v3_1, v3_2, v3_3, worldMatrix } from '../../GlobalConst';
 import { Util } from '../../framework/util';
 import { MsgEvent } from '../../msg/MsgEvent';
 import { Msg } from '../../msg/msg';
@@ -77,7 +77,8 @@ export class MapOperateComp extends Component {
     /** 获取点击的格子, 传入屏幕坐标*/
     public getHitPointToGrid(vec2: Vec2, out:Vec2){
         if(this.calculateHitPoint(vec2)){
-            this.node.inverseTransformPoint(v3_1, mapHitPoint);
+            Vec3.transformInverseRTS(v3_1, mapHitPoint, this.node.rotation,
+                this.node.position, Vec3.ONE);
             out.x = Math.floor(v3_1.x / GlobalConst.mapGridWidth);
             out.y = Math.floor(v3_1.z / GlobalConst.mapGridHeight);
             return true;
@@ -88,13 +89,42 @@ export class MapOperateComp extends Component {
     /** 获取点击的格子中心坐标, 传入屏幕坐标 */
     public getHitPointToGridPosition(vec2: Vec2, out:Vec3){
         if(this.calculateHitPoint(vec2)){
-            this.node.inverseTransformPoint(v3_1, mapHitPoint);
+            this._setMapPos(out);
+            return true;
+            Vec3.transformInverseRTS(v3_1, mapHitPoint, this.node.rotation,
+                this.node.position, Vec3.ONE);
+
+            
+
+            console.log(`hitpointx:${v3_1.x} hitpointy:${v3_1.y} hitpointz:${v3_1.z}`)
             out.x = (Math.floor(v3_1.x / GlobalConst.mapGridWidth) + 0.5) * GlobalConst.mapGridWidth;
             out.y = out.y;
             out.z = (Math.floor(v3_1.z / GlobalConst.mapGridHeight) + 0.5) * GlobalConst.mapGridHeight;
+            // Vec3.transformMat4(child._pos, out, cur._mat);
+
+            this.node.getWorldMatrix(worldMatrix);
+            Vec3.transformMat4(out, out, worldMatrix);
+            out.divide(this.node.scale);
             return true;
         }
         return false;
+    }
+
+    private _setMapPos(out:Vec3){
+        this.node.inverseTransformPoint(v3_1, mapHitPoint);
+        const scale = this.node.scale;
+        let scaleX = GlobalConst.mapGridWidth / scale.x;
+        let scaleY = GlobalConst.mapGridHeight / scale.z;
+
+
+        console.log(`hitpointx:${v3_1.x} hitpointy:${v3_1.y} hitpointz:${v3_1.z}`)
+        out.x = (Math.floor(v3_1.x / scaleX) + 0.5) * scaleX;
+        out.y = out.y;
+        out.z = (Math.floor(v3_1.z / scaleY) + 0.5) * scaleY;
+
+
+        this.node.getWorldMatrix(worldMatrix);
+        Vec3.transformMat4(out, out, worldMatrix);
     }
 
     noteMoveTochePoint(vec2: Vec2){
