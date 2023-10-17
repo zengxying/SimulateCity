@@ -39,9 +39,10 @@ export class BuildingOperateLogic implements IOperateHandler {
     }
 
     onLongTouch() {
+     
         // 进入了拖动建筑物流程
         this._state = BuildingOperateState.LONG_TOUCH_RUNNING;
-        GlobalConst.mapPanel.getHitPointToGridPosition(this._startTouchPoint, v3_1);
+        GlobalConst.mapPanel.getHitPointToGridPosition(this._startTouchPoint, v3_1, v2_2);
         this.target.setPosition(v3_1);
         console.log("长按中....................");
     }
@@ -62,11 +63,11 @@ export class BuildingOperateLogic implements IOperateHandler {
             touches[0].getLocation(this._startTouchPoint);
             e.getDelta(v2_1);
             if (this._state == BuildingOperateState.LONG_TOUCH_CHECK && v2_1.lengthSqr() > 100) {
-                this._state = BuildingOperateState.NONE;
+                this._state = BuildingOperateState.SHORT_TOUCH_RUNNING;
                 this._comp.unschedule(this.onLongTouch);
             }
             if (this._state == BuildingOperateState.LONG_TOUCH_RUNNING) {
-                GlobalConst.mapPanel.getHitPointToGridPosition(this._startTouchPoint, v3_1);
+                GlobalConst.mapPanel.getHitPointToGridPosition(this._startTouchPoint, v3_1, v2_2);
                 this.target.setPosition(v3_1);
             }
             if (this._state == BuildingOperateState.SHORT_TOUCH_RUNNING) {

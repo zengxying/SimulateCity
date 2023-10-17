@@ -917,6 +917,7 @@ export class Util {
 
 
     public static createSphere(parent: Node, radius: number, pos: Vec3) : Node{
+        // return;
         let node = new Node("Test球");
         node.parent = parent;
         node.setPosition(pos);

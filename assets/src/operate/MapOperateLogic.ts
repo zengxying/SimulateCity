@@ -5,6 +5,7 @@ import { CameraControllerComp } from "../component/mapOp/CameraControllerComp";
 import { MsgEvent } from "../msg/MsgEvent";
 import { Msg } from "../msg/msg";
 import { Util } from "../framework/util";
+import { MapOperateComp } from "../component/mapOp/MapOperateComp";
 
 const lv = 0.05;
 
@@ -65,7 +66,7 @@ export class MapOperateLogic implements IOperateHandler {
             scale = disPre - disCur;
 
 
-            v2_2.set(rota, angle);
+            v2_2.set(rota, -angle);
             Msg.emit(MsgEvent.OP_TOUCH_SCALE, scale * 0.1);
             Msg.emit(MsgEvent.OP_TOUCH_ROTA, v2_2);
             // Log.log("on touch move:realAngle---> ", angle, v2_4.x, v2_4.y);
@@ -103,6 +104,8 @@ export class MapOperateLogic implements IOperateHandler {
             Msg.emit(MsgEvent.OP_RESET_CLICK_POINT, v2_2);
             Util.getScreenToWorld(v2_2, v3_2, lv);
             Msg.emit(MsgEvent.OP_TOUCH_MOVE_MAP, v2_2);
+            let vec3 = MapOperateComp.ins._velocity;
+            console.log("MapOperateComp.ins._velocity x:"+vec3.x + " y:"+vec3.y + " z:"+vec3.z);
         }
 
         this._continueMoveDirty = true;

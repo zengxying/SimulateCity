@@ -53,7 +53,8 @@ export class CameraControllerComp extends Component {
     }
 
     protected onEnable(): void {
-        // Msg.on(MsgEvent.OP_TOUCH_MOVE, this.moveView.bind(this));
+        Msg.on(MsgEvent.UPDATE_CAMERA_POSITION, this.updateCameraPosition.bind(this));
+        Msg.on(MsgEvent.UPDATE_CAMERA_EULER_ANGLE, this.updateCameraEulerAngle.bind(this));
         Msg.on(MsgEvent.OP_TOUCH_ROTA, this.rotaView.bind(this));
         Msg.on(MsgEvent.OP_TOUCH_SCALE, this.scaleView.bind(this));
     }
@@ -63,6 +64,14 @@ export class CameraControllerComp extends Component {
         Msg.off(MsgEvent.OP_TOUCH_ROTA, this.scaleView);
     }
 
+    updateCameraPosition(vec3: Vec3){
+        this.node.setPosition(vec3);
+        this._position.set(vec3);
+    }
+
+    updateCameraEulerAngle(vec3: Vec3){
+        this._euler.set(vec3)
+    }
     
 
     /** 缩放 */
@@ -76,7 +85,9 @@ export class CameraControllerComp extends Component {
 
     /** 旋转 */
     public rotaView(vec2: Vec2) { // 旋转看着像是地图的旋转
-        
+        return;
+        Vec3.transformQuat(v3_1, Vec3.UNIT_Z, this._camera.node.rotation);
+
         let x = vec2.x;
         let y = vec2.y;
         x = this._euler.x + x * this._rotaRatio;
@@ -94,6 +105,8 @@ export class CameraControllerComp extends Component {
         }
         this._euler.x = x;
     }
+
+    
 
     public update(dt: number) {
         const t = Math.min(dt / this.damp, 1);
