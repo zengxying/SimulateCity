@@ -17,7 +17,7 @@ export class GlobalConst {
     static camera: Camera;
 
     /** 地图平面 */
-    static mapPanel: MapOperateComp;
+    static mapPanel: Node;
 
     // 地图格子大小
     static mapGridWidth: number = 2;

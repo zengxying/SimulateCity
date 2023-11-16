@@ -3,6 +3,7 @@ import { GlobalConst, ray, v3_1, v3_2, v3_3, worldMatrix } from '../../GlobalCon
 import { Util } from '../../framework/util';
 import { MsgEvent } from '../../msg/MsgEvent';
 import { Msg } from '../../msg/msg';
+import { MapMgr } from '../../MapMgr';
 
 const { ccclass, property } = _decorator;
 
@@ -40,7 +41,7 @@ export class MapOperateComp extends Component {
 
     protected onLoad(): void {
         MapOperateComp.ins = this;
-        GlobalConst.mapPanel = this;
+        GlobalConst.mapPanel = this.node;
         this._meshRender = this.node.getComponent(MeshRenderer);
         Vec3.copy(this._eulerP, this.node.eulerAngles);
         Vec3.copy(this._position, this.node.position);
@@ -52,6 +53,8 @@ export class MapOperateComp extends Component {
         Msg.on(MsgEvent.OP_TOUCH_MOVE, this.moveView.bind(this));
         Msg.on(MsgEvent.OP_TOUCH_MOVE_MAP, this.noteMoveTochePoint.bind(this));
         Msg.on(MsgEvent.OP_RESET_CLICK_POINT, this._updateHitPoint.bind(this));
+
+        MapMgr.ins.graphicsMapLine();
     }
 
     protected onDisable(): void {
@@ -59,63 +62,11 @@ export class MapOperateComp extends Component {
     }
 
     private _updateHitPoint(vec2: Vec2) {
-        this.calculateHitPoint(vec2);
+        MapMgr.ins.calculateHitPoint(vec2, mapHitPoint);
         this._preHit3DPoint.set(mapHitPoint);
     }
 
-    /** 计算触发到地图上的点位, 传入屏幕坐标 */
-    public calculateHitPoint(vec2: Vec2, out?: Vec3) {
-        const camera = GlobalConst.camera;
-        camera.screenPointToRay(vec2.x, vec2.y, ray);
-        let dis = geometry.intersect.rayModel(ray, this._meshRender.model);
-        if (dis) {
-            ray.computeHit(mapHitPoint, dis); // 性能要好些
-            out && out.set(mapHitPoint);
-            return true;
-        }
-        return false;
-    }
-
-    /** 获取点击的格子, 传入屏幕坐标*/
-    public getHitPointToGrid(vec2: Vec2, out: Vec2) {
-        if (this.calculateHitPoint(vec2)) {
-            this.node.inverseTransformPoint(v3_1, mapHitPoint);
-            const scale = this.node.scale;
-            let scaleX = GlobalConst.mapGridWidth / scale.x;
-            let scaleY = GlobalConst.mapGridHeight / scale.z;
-
-            out.x = Math.floor(v3_1.x / scaleX);
-            out.y = Math.floor(v3_1.z / scaleY);
-            return true;
-        }
-        return false;
-    }
-
-    /** 获取点击的格子中心坐标, 传入屏幕坐标 */
-    public getHitPointToGridPosition(vec2: Vec2, out: Vec3, outGrid:Vec2) {
-        if (this.calculateHitPoint(vec2)) {
-            this._setMapPos(out,outGrid);
-            return true;
-        }
-        return false;
-    }
-
-    private _setMapPos(out: Vec3,outGrid:Vec2) {
-        this.node.inverseTransformPoint(v3_1, mapHitPoint);
-        const scale = this.node.scale;
-        let scaleX = GlobalConst.mapGridWidth / scale.x;
-        let scaleY = GlobalConst.mapGridHeight / scale.z;
-        
-        outGrid.x = Math.floor(v3_1.x / scaleX);
-        outGrid.y = Math.floor(v3_1.z / scaleY);
-
-        out.x = (outGrid.x + 0.5) * scaleX;
-        out.y = out.y;
-        out.z = (outGrid.y + 0.5) * scaleY;
-
-        this.node.getWorldMatrix(worldMatrix);
-        Vec3.transformMat4(out, out, worldMatrix);
-    }
+    
 
 
 
@@ -127,7 +78,7 @@ export class MapOperateComp extends Component {
     moveMap(vec2: Vec2) {
         if (!this._moveDirty) return;
         this._moveDirty = false;
-        let canHit = this.calculateHitPoint(vec2);
+        let canHit = MapMgr.ins.calculateHitPoint(vec2, mapHitPoint);
 
         if (canHit) {
             v3_1.set(mapHitPoint);

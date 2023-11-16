@@ -1,102 +1,159 @@
-2023-10-12 16:43:52 - verbose: Arguments:
-2023-10-12 16:43:52 - verbose:   D:\CocosVersion\CocosCreator-v3.7.3-win-042810\CocosCreator.exe: true
-2023-10-12 16:43:52 - verbose:   project: D:\cocos_work\games\SimulateCity
-2023-10-12 16:43:52 - verbose:   dev: false
-2023-10-12 16:43:52 - verbose:   home: C:\Users\Administrator\.CocosCreator
-2023-10-12 16:43:52 - verbose:  
-2023-10-12 16:43:57 - verbose: [Package] menu@1.0.0 enable
-2023-10-12 16:43:57 - verbose: [Package] profile@1.0.0 enable
-2023-10-12 16:43:57 - verbose: [Package] project@1.0.4 enable
-2023-10-12 16:43:57 - verbose: [Package] messages@1.0.0 enable
-2023-10-12 16:43:57 - verbose: [Package] program@1.0.3 enable
-2023-10-12 16:43:57 - verbose: [Package] tester@1.0.0 enable
-2023-10-12 16:43:57 - verbose: [Package] information@1.0.0 enable
-2023-10-12 16:43:57 - verbose: [Package] preferences@1.0.0 enable
-2023-10-12 16:44:02 - log: Load engine in D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine
-2023-10-12 16:44:03 - log: Register native engine in D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\native
-2023-10-12 16:44:03 - verbose: [Package] engine@1.0.7 enable
-2023-10-12 16:44:05 - verbose: [Package] programming@1.0.0 enable
-2023-10-12 16:44:05 - verbose: [Package] device@1.0.1 enable
-2023-10-12 16:44:05 - verbose: [Package] ui-kit@1.0.1 enable
-2023-10-12 16:44:05 - verbose: [Package] asset-db@1.0.0 enable
-2023-10-12 16:44:05 - verbose: [Package] scene@1.0.0 enable
-2023-10-12 16:44:05 - verbose: [Package] server@1.0.0 enable
-2023-10-12 16:44:05 - verbose: [Package] utils@1.0.0 enable
-2023-10-12 16:44:15 - verbose: [Package] preview@1.0.1 enable
-2023-10-12 16:44:15 - verbose: [Package] animator@1.0.0 enable
-2023-10-12 16:44:16 - verbose: [Build-plugin] register pkg scene: 3ms
-2023-10-12 16:44:16 - verbose: Builder PluginManager init: 4ms
-2023-10-12 16:44:16 - verbose: [Package] builder@1.3.5 enable
-2023-10-12 16:44:16 - verbose: [Package] shortcuts@1.0.1 enable
-2023-10-12 16:44:16 - verbose: [Package] animation-graph@1.0.0 enable
-2023-10-12 16:44:16 - verbose: [Package] about@1.0.2 enable
-2023-10-12 16:44:16 - verbose: [Package] assets@1.0.0 enable
-2023-10-12 16:44:16 - verbose: [Package] console@1.0.0 enable
-2023-10-12 16:44:17 - verbose: [Package] crash-reporter@1.0.0 enable
-2023-10-12 16:44:17 - verbose: [Package] extension@3.1.1 enable
-2023-10-12 16:44:17 - verbose: [Package] hierarchy@1.0.0 enable
-2023-10-12 16:44:17 - verbose: [Package] inspector@1.0.0 enable
-2023-10-12 16:44:17 - verbose: [Package] light-probe@1.0.4 enable
-2023-10-12 16:44:17 - verbose: [Package] lightmap@1.0.4 enable
-2023-10-12 16:44:17 - verbose: [Package] node-library@1.0.1 enable
-2023-10-12 16:44:17 - verbose: [Package] package-asset@1.0.1 enable
-2023-10-12 16:44:18 - verbose: [Package] cocos-service@3.0.7 enable
-2023-10-12 16:44:18 - verbose: [Build-plugin] register pkg cocos-service: 119ms
-2023-10-12 16:44:18 - verbose: [Package] process@1.0.0 enable
-2023-10-12 16:44:18 - verbose: [Package] reference-image@1.0.0 enable
-2023-10-12 16:44:18 - verbose: [Package] reflection-probe@1.0.4 enable
-2023-10-12 16:44:18 - verbose: [Package] engine-extends@1.0.0 enable
-2023-10-12 16:44:18 - verbose: [Package] alipay-mini-game@1.0.1 enable
-2023-10-12 16:44:18 - verbose: [Package] android@1.0.1 enable
-2023-10-12 16:44:18 - verbose: [Package] bytedance-mini-game@1.0.2 enable
-2023-10-12 16:44:18 - verbose: [Package] certificate@1.0.0 enable
-2023-10-12 16:44:18 - verbose: [Package] channel-upload-tools@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] fb-instant-games@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] huawei-agc@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] huawei-quick-game@1.0.1 enable
-2023-10-12 16:44:19 - verbose: [Package] ios@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] linux@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] mac@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Build-plugin] register pkg fb-instant-games: 165ms
-2023-10-12 16:44:19 - verbose: [Package] native@1.0.2 enable
-2023-10-12 16:44:19 - verbose: [Build-plugin] register pkg native: 142ms
-2023-10-12 16:44:19 - verbose: [Package] ohos@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Build-plugin] register pkg huawei-quick-game: 385ms
-2023-10-12 16:44:19 - verbose: [Build-plugin] register pkg huawei-agc: 420ms
-2023-10-12 16:44:19 - verbose: [Build-plugin] register pkg bytedance-mini-game: 534ms
-2023-10-12 16:44:19 - verbose: [Package] open-harmonyos@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] oppo-mini-game@1.0.1 enable
-2023-10-12 16:44:19 - verbose: [Build-plugin] register pkg ios: 413ms
-2023-10-12 16:44:19 - verbose: [Package] runtime-dev-tools@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] taobao-creative-app@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] taobao-mini-game@1.0.0 enable
-2023-10-12 16:44:19 - verbose: [Package] vivo-mini-game@1.0.1 enable
-2023-10-12 16:44:19 - verbose: [Package] web-desktop@1.0.1 enable
-2023-10-12 16:44:19 - verbose: [Build-plugin] register pkg mac: 532ms
-2023-10-12 16:44:19 - verbose: [Package] web-mobile@1.0.1 enable
-2023-10-12 16:44:19 - verbose: [Package] wechatgame@1.0.2 enable
-2023-10-12 16:44:19 - verbose: [Package] wechatprogram@1.0.2 enable
-2023-10-12 16:44:19 - verbose: [Package] windows@1.0.1 enable
-2023-10-12 16:44:19 - verbose: [Package] xiaomi-quick-game@1.0.1 enable
-2023-10-12 16:44:20 - verbose: [Package] im-plugin@3.0.10 enable
-2023-10-12 16:44:20 - verbose: [Package] placeholder@1.0.0 enable
-2023-10-12 16:44:20 - verbose: asset-db is ready!
-2023-10-12 16:44:26 - verbose: [Build-plugin] register pkg ohos: 7216ms
-2023-10-12 16:44:26 - verbose: [Build-plugin] register pkg oppo-mini-game: 7232ms
-2023-10-12 16:44:26 - info: [Scene] [Physics][Bullet]: Using asmjs Bullet libs.
-2023-10-12 16:44:26 - info: [Scene] [PHYSICS]: using builtin.
-2023-10-12 16:44:26 - log: [Scene] Cocos Creator v3.7.3
-2023-10-12 16:44:26 - info: [Scene] Forward render pipeline initialized.
-2023-10-12 16:44:27 - info: [Scene] [PHYSICS]: switch from builtin to bullet.
-2023-10-12 16:44:27 - info: [Scene] [PHYSICS2D]: switch from builtin to box2d.
-2023-10-12 16:44:39 - verbose: [Build-plugin] register pkg alipay-mini-game: 21024ms
-2023-10-12 16:44:39 - verbose: [Build-plugin] register pkg android: 21020ms
-2023-10-12 16:44:40 - verbose: [Build-plugin] register pkg taobao-creative-app: 21017ms
-2023-10-12 16:44:40 - verbose: [Build-plugin] register pkg taobao-mini-game: 21021ms
-2023-10-12 16:44:40 - verbose: [Build-plugin] register pkg vivo-mini-game: 21013ms
-2023-10-12 16:44:40 - verbose: [Build-plugin] register pkg web-desktop: 21016ms
-2023-10-12 16:44:40 - verbose: [Build-plugin] register pkg web-mobile: 21018ms
-2023-10-12 16:44:40 - verbose: [Build-plugin] register pkg wechatgame: 21015ms
-2023-10-12 16:44:40 - verbose: [Build-plugin] register pkg windows: 21010ms
-2023-10-12 16:44:40 - verbose: [Build-plugin] register pkg xiaomi-quick-game: 21016ms
-2023-10-12 18:19:20 - warn: Metrics: no valid info
+2023-11-16 10:54:44 - verbose: Arguments:
+2023-11-16 10:54:44 - verbose:   D:\CocosVersion\CocosCreator-v3.7.3-win-042810\CocosCreator.exe: true
+2023-11-16 10:54:44 - verbose:   project: D:\cocos_work\SimulateCity
+2023-11-16 10:54:44 - verbose:   can-show-upgrade-dialog: true
+2023-11-16 10:54:44 - verbose:   dev: false
+2023-11-16 10:54:44 - verbose:   home: C:\Users\Administrator\.CocosCreator
+2023-11-16 10:54:44 - verbose:  
+2023-11-16 10:54:48 - verbose: [Package] menu@1.0.0 enable
+2023-11-16 10:54:48 - verbose: [Package] profile@1.0.0 enable
+2023-11-16 10:54:48 - verbose: [Package] project@1.0.4 enable
+2023-11-16 10:54:48 - verbose: [Package] messages@1.0.0 enable
+2023-11-16 10:54:49 - verbose: [Package] program@1.0.3 enable
+2023-11-16 10:54:49 - verbose: [Package] tester@1.0.0 enable
+2023-11-16 10:54:49 - verbose: [Package] information@1.0.0 enable
+2023-11-16 10:54:49 - verbose: [Package] preferences@1.0.0 enable
+2023-11-16 10:54:54 - log: Load engine in D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine
+2023-11-16 10:54:54 - log: Register native engine in D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\native
+2023-11-16 10:54:54 - verbose: [Package] engine@1.0.7 enable
+2023-11-16 10:54:56 - verbose: [Package] programming@1.0.0 enable
+2023-11-16 10:54:56 - verbose: [Package] device@1.0.1 enable
+2023-11-16 10:54:56 - verbose: [Package] ui-kit@1.0.1 enable
+2023-11-16 10:54:57 - verbose: [Package] asset-db@1.0.0 enable
+2023-11-16 10:54:57 - verbose: [Package] scene@1.0.0 enable
+2023-11-16 10:54:57 - verbose: [Package] server@1.0.0 enable
+2023-11-16 10:54:57 - verbose: [Package] utils@1.0.0 enable
+2023-11-16 10:55:07 - verbose: [Package] preview@1.0.1 enable
+2023-11-16 10:55:07 - verbose: [Package] animator@1.0.0 enable
+2023-11-16 10:55:07 - verbose: [Build-plugin] register pkg scene: 3ms
+2023-11-16 10:55:07 - verbose: Builder PluginManager init: 3ms
+2023-11-16 10:55:07 - verbose: [Package] builder@1.3.5 enable
+2023-11-16 10:55:07 - verbose: [Package] shortcuts@1.0.1 enable
+2023-11-16 10:55:07 - verbose: [Package] animation-graph@1.0.0 enable
+2023-11-16 10:55:07 - verbose: [Package] about@1.0.2 enable
+2023-11-16 10:55:07 - verbose: [Package] assets@1.0.0 enable
+2023-11-16 10:55:07 - verbose: [Package] console@1.0.0 enable
+2023-11-16 10:55:08 - verbose: [Package] crash-reporter@1.0.0 enable
+2023-11-16 10:55:08 - verbose: [Package] extension@3.1.1 enable
+2023-11-16 10:55:08 - verbose: [Package] hierarchy@1.0.0 enable
+2023-11-16 10:55:08 - verbose: [Package] inspector@1.0.0 enable
+2023-11-16 10:55:09 - verbose: [Package] light-probe@1.0.4 enable
+2023-11-16 10:55:09 - verbose: [Package] lightmap@1.0.4 enable
+2023-11-16 10:55:09 - verbose: [Package] node-library@1.0.1 enable
+2023-11-16 10:55:09 - verbose: [Package] cocos-service@3.0.7 enable
+2023-11-16 10:55:09 - verbose: [Build-plugin] register pkg cocos-service: 120ms
+2023-11-16 10:55:09 - verbose: [Package] package-asset@1.0.1 enable
+2023-11-16 10:55:09 - verbose: [Package] process@1.0.0 enable
+2023-11-16 10:55:09 - verbose: [Package] reference-image@1.0.0 enable
+2023-11-16 10:55:09 - verbose: [Package] reflection-probe@1.0.4 enable
+2023-11-16 10:55:09 - verbose: [Package] engine-extends@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Package] alipay-mini-game@1.0.1 enable
+2023-11-16 10:55:10 - verbose: [Package] android@1.0.1 enable
+2023-11-16 10:55:10 - verbose: [Package] bytedance-mini-game@1.0.2 enable
+2023-11-16 10:55:10 - verbose: [Package] certificate@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Package] channel-upload-tools@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Package] fb-instant-games@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg alipay-mini-game: 234ms
+2023-11-16 10:55:10 - verbose: [Package] huawei-agc@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Package] huawei-quick-game@1.0.1 enable
+2023-11-16 10:55:10 - verbose: [Package] ios@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Package] linux@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg bytedance-mini-game: 196ms
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg android: 307ms
+2023-11-16 10:55:10 - verbose: [Package] mac@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg fb-instant-games: 152ms
+2023-11-16 10:55:10 - verbose: [Package] native@1.0.2 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg native: 125ms
+2023-11-16 10:55:10 - verbose: [Package] ohos@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg huawei-agc: 395ms
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg huawei-quick-game: 371ms
+2023-11-16 10:55:10 - verbose: [Package] open-harmonyos@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Package] oppo-mini-game@1.0.1 enable
+2023-11-16 10:55:10 - verbose: [Package] runtime-dev-tools@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg mac: 370ms
+2023-11-16 10:55:10 - verbose: [Package] taobao-creative-app@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg ios: 437ms
+2023-11-16 10:55:10 - verbose: [Package] taobao-mini-game@1.0.0 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg ohos: 148ms
+2023-11-16 10:55:10 - verbose: [Package] vivo-mini-game@1.0.1 enable
+2023-11-16 10:55:10 - verbose: [Package] web-desktop@1.0.1 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg oppo-mini-game: 178ms
+2023-11-16 10:55:10 - verbose: [Package] web-mobile@1.0.1 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg taobao-mini-game: 155ms
+2023-11-16 10:55:10 - verbose: [Package] wechatgame@1.0.2 enable
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg taobao-creative-app: 208ms
+2023-11-16 10:55:10 - verbose: [Build-plugin] register pkg vivo-mini-game: 164ms
+2023-11-16 10:55:10 - verbose: [Package] wechatprogram@1.0.2 enable
+2023-11-16 10:55:10 - verbose: [Package] windows@1.0.1 enable
+2023-11-16 10:55:11 - verbose: [Package] xiaomi-quick-game@1.0.1 enable
+2023-11-16 10:55:11 - verbose: [Package] im-plugin@3.0.10 enable
+2023-11-16 10:55:11 - verbose: [Build-plugin] register pkg wechatgame: 492ms
+2023-11-16 10:55:11 - verbose: [Build-plugin] register pkg web-desktop: 574ms
+2023-11-16 10:55:11 - verbose: [Build-plugin] register pkg web-mobile: 536ms
+2023-11-16 10:55:11 - verbose: [Package] placeholder@1.0.0 enable
+2023-11-16 10:55:11 - verbose: [Build-plugin] register pkg windows: 492ms
+2023-11-16 10:55:11 - verbose: [Build-plugin] register pkg xiaomi-quick-game: 532ms
+2023-11-16 10:55:11 - verbose: asset-db is ready!
+2023-11-16 10:55:17 - info: [Scene] [Physics][Bullet]: Using asmjs Bullet libs.
+2023-11-16 10:55:17 - info: [Scene] [PHYSICS]: using builtin.
+2023-11-16 10:55:18 - log: [Scene] Cocos Creator v3.7.3
+2023-11-16 10:55:18 - info: [Scene] Forward render pipeline initialized.
+2023-11-16 10:55:18 - warn: [Scene] 'CanvasComponent' is deprecated since v1.2.0, please use 'Canvas' instead.Error: [Scene] 'CanvasComponent' is deprecated since v1.2.0, please use 'Canvas' instead.
+    at warn (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:156760:12)
+    at warnID (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:156979:5)
+    at _checkObsoleteByName (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:161830:7)
+    at __checkObsolete__ (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:161850:7)
+    at Object.execute (file:///D:/cocos_work/SimulateCity/temp/programming/packer-driver/targets/editor/chunks/3e/3e4ee88f8fa02702c4500eef1d919254c59f080a.js:85:7)
+    at doExec (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+2023-11-16 10:55:18 - info: [Scene] [PHYSICS]: switch from builtin to bullet.
+2023-11-16 10:55:18 - info: [Scene] [PHYSICS2D]: switch from builtin to box2d.
+2023-11-16 10:55:19 - warn: [Scene] 'CanvasComponent' is deprecated since v1.2.0, please use 'Canvas' instead.Error: [Scene] 'CanvasComponent' is deprecated since v1.2.0, please use 'Canvas' instead.
+    at warn (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:156760:12)
+    at warnID (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:156979:5)
+    at _checkObsoleteByName (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:161830:7)
+    at __checkObsolete__ (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:161850:7)
+    at Object.execute (file:///D:/cocos_work/SimulateCity/temp/programming/packer-driver/targets/editor/chunks/3e/3e4ee88f8fa02702c4500eef1d919254c59f080a.js:85:7)
+    at doExec (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+    at postOrderExec (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:508:21)
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: [
+2023-11-16 10:55:30 - verbose: B
+2023-11-16 10:55:31 - info: [Window] Download the Vue Devtools extension for a better development experience:
+https://github.com/vuejs/vue-devtools
+2023-11-16 10:55:31 - info: [Window] You are running Vue in development mode.
+Make sure to turn on production mode when deploying for production.
+See more tips at https://vuejs.org/guide/deployment.html
+2023-11-16 10:55:54 - warn: [Assets] illegal pass index: 0.[Assets] illegal pass index: 0.  
+at Object.warn (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\app.asar\builtin\asset-db\dist\worker\console.ccc:1:1412)  
+at NewConsole.warn (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\app.asar\builtin\builder\dist\worker\console.ccc:1:1709)  
+at Material.setProperty (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:173837:23)  
+at file:///D:/cocos_work/SimulateCity/temp/programming/packer-driver/targets/editor/chunks/98/file:/D:/cocos_work/SimulateCity/assets/src/framework/util.ts:19:9  
+at Object.execute (file:///D:/cocos_work/SimulateCity/temp/programming/packer-driver/targets/editor/chunks/98/file:/D:/cocos_work/SimulateCity/assets/src/framework/util.ts:8:1)  
+at doExec (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)
+2023-11-16 10:55:54 - warn: [Assets] 'CanvasComponent' is deprecated since v1.2.0, please use 'Canvas' instead.[Assets] 'CanvasComponent' is deprecated since v1.2.0, please use 'Canvas' instead.  
+at warn (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:156760:12)  
+at warnID (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:156979:5)  
+at _checkObsoleteByName (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:161830:7)  
+at __checkObsolete__ (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\resources\3d\engine\bin\.cache\dev\editor\bundled\index.js:161850:7)  
+at Object.execute (file:///D:/cocos_work/SimulateCity/temp/programming/packer-driver/targets/editor/chunks/3e/3e4ee88f8fa02702c4500eef1d919254c59f080a.js:85:7)  
+at doExec (D:\CocosVersion\CocosCreator-v3.7.3-win-042810\resources\app.asar\node_modules\@editor\lib-programming\static\executor\systemjs-bridge\out\index.js:517:30)

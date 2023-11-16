@@ -4,6 +4,7 @@ import { MsgEvent } from '../msg/MsgEvent';
 import { Msg } from '../msg/msg';
 import { IOperateHandler } from './IOperateLogic';
 import { Util } from '../framework/util';
+import { MapMgr } from '../MapMgr';
 
 enum BuildingOperateState {
     NONE,
@@ -42,7 +43,7 @@ export class BuildingOperateLogic implements IOperateHandler {
      
         // 进入了拖动建筑物流程
         this._state = BuildingOperateState.LONG_TOUCH_RUNNING;
-        GlobalConst.mapPanel.getHitPointToGridPosition(this._startTouchPoint, v3_1, v2_2);
+        MapMgr.ins.getHitPointToGridPosition(this._startTouchPoint, v3_1, v2_2);
         this.target.setPosition(v3_1);
         console.log("长按中....................");
     }
@@ -67,7 +68,7 @@ export class BuildingOperateLogic implements IOperateHandler {
                 this._comp.unschedule(this.onLongTouch);
             }
             if (this._state == BuildingOperateState.LONG_TOUCH_RUNNING) {
-                GlobalConst.mapPanel.getHitPointToGridPosition(this._startTouchPoint, v3_1, v2_2);
+                MapMgr.ins.getHitPointToGridPosition(this._startTouchPoint, v3_1, v2_2);
                 this.target.setPosition(v3_1);
             }
             if (this._state == BuildingOperateState.SHORT_TOUCH_RUNNING) {

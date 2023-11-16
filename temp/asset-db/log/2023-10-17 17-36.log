@@ -1,0 +1,45 @@
+2023-10-17 17:37:01-debug: asset-db:worker-init (2298ms)
+2023-10-17 17:37:01-debug: Preimport db internal success
+2023-10-17 17:37:01-debug: %cImport%c: D:\cocos_work\SimulateCity\assets\src\MapMgr.tsbackground: #aaff85; color: #000;color: #000;
+2023-10-17 17:37:01-debug: Preimport db assets success
+2023-10-17 17:37:01-debug: asset-db:worker-effect-data-processing (288ms)
+2023-10-17 17:37:09-debug: Set detail map pack:///resolution-detail-map.json: {}
+2023-10-17 17:37:09-debug: Start up the 'internal' database...
+2023-10-17 17:37:09-debug: asset-db:worker-init-script (101ms)
+2023-10-17 17:37:09-debug: start asset-db with asset: 419
+2023-10-17 17:37:09-debug: Start up the 'assets' database...
+2023-10-17 17:37:09-debug: asset-db:worker-startup-database[internal] (8140ms)
+2023-10-17 17:37:09-debug: start asset-db with asset: 84
+2023-10-17 17:37:09-debug: Asset DB is ready!
+2023-10-17 17:37:09-debug: asset-db:worker-startup-database[assets] (7973ms)
+2023-10-17 17:37:09-debug: init worker message success
+2023-10-17 17:37:12-debug: builder:worker-init (2888ms)
+2023-10-17 17:37:16-debug: programming:execute-script (6ms)
+2023-10-17 18:07:16-debug: refresh db internal success
+2023-10-17 18:07:17-debug: asset-db:worker-effect-data-processing (454ms)
+2023-10-17 18:07:17-debug: refresh db assets success
+2023-10-17 18:07:17-debug: asset-db:refresh-all-database (627ms)
+2023-10-17 18:07:22-debug: refresh db internal success
+2023-10-17 18:07:22-debug: asset-db:worker-effect-data-processing (300ms)
+2023-10-17 18:07:22-debug: refresh db assets success
+2023-10-17 18:07:22-debug: asset-db:refresh-all-database (467ms)
+2023-10-17 18:11:21-debug: refresh db internal success
+2023-10-17 18:11:21-debug: asset-db:worker-effect-data-processing (295ms)
+2023-10-17 18:11:21-debug: refresh db assets success
+2023-10-17 18:11:21-debug: asset-db:refresh-all-database (415ms)
+2023-10-17 18:11:31-debug: refresh db internal success
+2023-10-17 18:11:32-debug: asset-db:worker-effect-data-processing (282ms)
+2023-10-17 18:11:32-debug: refresh db assets success
+2023-10-17 18:11:32-debug: asset-db:refresh-all-database (411ms)
+2023-10-17 18:11:35-debug: refresh db internal success
+2023-10-17 18:11:35-debug: asset-db:worker-effect-data-processing (213ms)
+2023-10-17 18:11:35-debug: refresh db assets success
+2023-10-17 18:11:35-debug: asset-db:refresh-all-database (321ms)
+2023-10-17 18:11:37-debug: refresh db internal success
+2023-10-17 18:11:37-debug: asset-db:worker-effect-data-processing (224ms)
+2023-10-17 18:11:37-debug: refresh db assets success
+2023-10-17 18:11:37-debug: asset-db:refresh-all-database (345ms)
+2023-10-17 18:31:17-debug: refresh db internal success
+2023-10-17 18:31:17-debug: asset-db:worker-effect-data-processing (325ms)
+2023-10-17 18:31:17-debug: refresh db assets success
+2023-10-17 18:31:17-debug: asset-db:refresh-all-database (440ms)

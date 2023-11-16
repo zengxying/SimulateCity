@@ -1,0 +1,1 @@
+{"version":3,"sources":["file:///D:/cocos_work/SimulateCity/assets/src/MapMgr.ts"],"names":["MapMgr"],"mappings":";;;iBAAaA,M;;;;;;;;;;;;;wBAAAA,M,GAAN,MAAMA,MAAN,CAAY,CAEf;AACA;AACA;AACA;AALe,O","sourcesContent":["export class MapMgr{\r\n\r\n    // 地图块的计算，当前地图有多少格子，那些格子可用\r\n    // 当前地图存在的建筑物\r\n    // 建筑物对应的状态\r\n    // 各个建筑物的状态更新\r\n    \r\n}"]}

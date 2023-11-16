@@ -87,18 +87,18 @@ export class OperateComp extends Component {
 
     public onTouchStart(e: EventTouch) {
         this.mapOperateLogic.onTouchStart(e);
-        // this.buildingOperateLogic.onTouchStart(e);
+        this.buildingOperateLogic.onTouchStart(e);
     }
 
     public onTouchMove(e: EventTouch) {
-        // this.buildingOperateLogic.onTouchMove(e);
-        // if(! this.buildingOperateLogic.checkMoveBuild()){
+        this.buildingOperateLogic.onTouchMove(e);
+        if(! this.buildingOperateLogic.checkMoveBuild()){
             this.mapOperateLogic.onTouchMove(e);
-        // }
+        }
     }
 
     public onTouchEnd(e: EventTouch) {
-        // this.buildingOperateLogic.onTouchEnd(e);
+        this.buildingOperateLogic.onTouchEnd(e);
         
         this.mapOperateLogic.onTouchEnd(e);
     }

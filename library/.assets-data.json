@@ -616,6 +616,7 @@
         "1263d74c-8167-4928-91a6-4e2672411f47@a804a",
         "14be7286-baf1-49e1-90b6-85a1563042db",
         "1263d74c-8167-4928-91a6-4e2672411f47@801ec",
+        "081cab31-dccd-428e-8652-f2404cc81c47",
         "f9ed3ec8-4488-4d5e-9a8a-240210d6d3d5",
         "1263d74c-8167-4928-91a6-4e2672411f47@2e76e",
         "e2a6418f-8324-420c-9c73-cd12b0b5bd82",
@@ -706,5 +707,81 @@
         "c8f66d17-351a-48da-a12c-0212d28575c4"
       ]
     }
+  },
+  "cc681794-7355-42f7-b339-0ab62407e7c2": {
+    "url": "db://assets/src/component/mapOp",
+    "value": {}
+  },
+  "4cb76d2a-ac0f-46c9-9cde-fa26d84e08f2": {
+    "url": "db://assets/src/component/mapOp/CameraControllerComp.ts",
+    "value": {}
+  },
+  "cfbf51df-c65a-40a6-ae75-58dbc0125dfa": {
+    "url": "db://assets/src/component/mapOp/FreeCamera.ts",
+    "value": {}
+  },
+  "8fcd9926-9469-4d89-95f4-882f3a017535": {
+    "url": "db://assets/src/component/mapOp/MapOperateComp.ts",
+    "value": {}
+  },
+  "bc1aba95-0baa-492a-83f6-d23f16d4f959": {
+    "url": "db://assets/src/component/OperateComp.ts",
+    "value": {}
+  },
+  "68a13d64-52ee-4410-b359-58dbcd3593c9": {
+    "url": "db://assets/src/component/mapOp/TestScreenInputComp.ts",
+    "value": {}
+  },
+  "af2dc34e-32dc-462d-ab85-996b3aa1931c": {
+    "url": "db://assets/src/MapMgr.ts",
+    "value": {}
+  },
+  "78f3f37a-b31e-4e18-b66d-307186a98dc2": {
+    "url": "db://assets/src/component/map",
+    "value": {}
+  },
+  "5b817462-3a41-494d-9482-10a73fd4e52f": {
+    "url": "db://assets/src/component/building",
+    "value": {}
+  },
+  "2c090066-7dd9-4522-b47c-9c428251317b": {
+    "url": "db://assets/src/data/BuildingData.ts",
+    "value": {}
+  },
+  "e488b56c-1e70-4543-967a-ff9e2b5a517b": {
+    "url": "db://assets/src/data/EnumIndex.ts",
+    "value": {}
+  },
+  "00ee3c35-f71d-46e3-85b3-20149901b207": {
+    "url": "db://assets/src/component/building/BuildingComp.ts",
+    "value": {}
+  },
+  "9d33247c-16bf-4455-925c-e8b49ae28298": {
+    "url": "db://assets/src/component/building/BuildingOperateComp.ts",
+    "value": {}
+  },
+  "91c6cf51-ef07-49c9-bec0-2430c9497efd": {
+    "url": "db://assets/src/operate",
+    "value": {}
+  },
+  "a8fc457c-8f32-4c3e-be1b-7c9fb28ac5c9": {
+    "url": "db://assets/src/operate/BuildingOperateComp.ts",
+    "value": {}
+  },
+  "f6a21acd-f6ec-4053-9171-e0fa8f0eaa89": {
+    "url": "db://assets/src/operate/IOperateHardwareHandler.ts",
+    "value": {}
+  },
+  "03065c32-49c9-4bc4-9036-adc53adae62b": {
+    "url": "db://assets/src/operate/IOperateLogic.ts",
+    "value": {}
+  },
+  "7dd7bc61-4179-4831-a206-81cb9c2ca18b": {
+    "url": "db://assets/src/operate/MapOperateLogic.ts",
+    "value": {}
+  },
+  "5e10a628-1420-4453-aa8a-28f942640a5e": {
+    "url": "db://assets/src/operate/BuildingOperateLogic.ts",
+    "value": {}
   }
 }

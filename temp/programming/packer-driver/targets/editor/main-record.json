@@ -1,7 +1,7 @@
 {
   "modules": {
     "cce:/internal/x/cc": {
-      "mTimestamp": 12581.750100001693,
+      "mTimestamp": 11855.180800000206,
       "chunkId": "cee638a986ad8fae09398db255647defcaa6612a",
       "imports": [
         {
@@ -619,8 +619,8 @@
       ]
     },
     "cce:/internal/x/prerequisite-imports": {
-      "mTimestamp": 5445609.327300001,
-      "chunkId": "3202266d9b1668effcf452ec1074060ca1b51774",
+      "mTimestamp": 19708.525500000454,
+      "chunkId": "3da5c602a2424370fccd798e09dc140ebc8ae04c",
       "imports": [
         {
           "value": "file:///D:/CocosVersion/CocosCreator-v3.7.3-win-042810/resources/resources/3d/engine/editor/assets/tools/debug-view-runtime-control.ts",
@@ -637,7 +637,7 @@
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/GlobalConst.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts",
           "resolved": "__unresolved_1",
           "loc": {
             "start": {
@@ -646,273 +646,385 @@
             },
             "end": {
               "line": 5,
-              "column": 255
+              "column": 249
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/CameraControllerComp.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/MapMgr.ts",
           "resolved": "__unresolved_2",
           "loc": {
             "start": {
               "line": 5,
-              "column": 271
+              "column": 265
             },
             "end": {
               "line": 5,
-              "column": 358
+              "column": 322
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/FreeCamera.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/component/OperateComp.ts",
           "resolved": "__unresolved_3",
           "loc": {
             "start": {
               "line": 5,
-              "column": 374
+              "column": 338
             },
             "end": {
               "line": 5,
-              "column": 451
+              "column": 410
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/MapOperateComp.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/component/building/BuildingComp.ts",
           "resolved": "__unresolved_4",
           "loc": {
             "start": {
               "line": 5,
-              "column": 467
+              "column": 426
             },
             "end": {
               "line": 5,
-              "column": 548
+              "column": 508
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/OperateComp.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/CameraControllerComp.ts",
           "resolved": "__unresolved_5",
           "loc": {
             "start": {
               "line": 5,
-              "column": 564
+              "column": 524
             },
             "end": {
               "line": 5,
-              "column": 642
+              "column": 611
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/TestScreenInputComp.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/FreeCamera.ts",
           "resolved": "__unresolved_6",
           "loc": {
             "start": {
               "line": 5,
-              "column": 658
+              "column": 627
             },
             "end": {
               "line": 5,
-              "column": 744
+              "column": 704
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/Handler.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/MapOperateComp.ts",
           "resolved": "__unresolved_7",
           "loc": {
             "start": {
               "line": 5,
-              "column": 760
+              "column": 720
             },
             "end": {
               "line": 5,
-              "column": 834
+              "column": 801
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/Log.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/TestScreenInputComp.ts",
           "resolved": "__unresolved_8",
           "loc": {
             "start": {
               "line": 5,
-              "column": 850
+              "column": 817
             },
             "end": {
               "line": 5,
-              "column": 920
+              "column": 903
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/csv2json.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/data/BuildingData.ts",
           "resolved": "__unresolved_9",
           "loc": {
             "start": {
               "line": 5,
-              "column": 936
+              "column": 919
             },
             "end": {
               "line": 5,
-              "column": 1011
+              "column": 987
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/csvManager.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/data/EnumIndex.ts",
           "resolved": "__unresolved_10",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1027
+              "column": 1003
             },
             "end": {
               "line": 5,
-              "column": 1104
+              "column": 1068
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/localConfig.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/Handler.ts",
           "resolved": "__unresolved_11",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1120
+              "column": 1084
             },
             "end": {
               "line": 5,
-              "column": 1198
+              "column": 1152
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/poolManager.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/Log.ts",
           "resolved": "__unresolved_12",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1214
+              "column": 1168
             },
             "end": {
               "line": 5,
-              "column": 1292
+              "column": 1232
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/resourceUtil.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/csv2json.ts",
           "resolved": "__unresolved_13",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1308
+              "column": 1248
             },
             "end": {
               "line": 5,
-              "column": 1387
+              "column": 1317
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/storageManager.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/csvManager.ts",
           "resolved": "__unresolved_14",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1403
+              "column": 1333
             },
             "end": {
               "line": 5,
-              "column": 1484
+              "column": 1404
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/tips.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/localConfig.ts",
           "resolved": "__unresolved_15",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1500
+              "column": 1420
             },
             "end": {
               "line": 5,
-              "column": 1571
+              "column": 1492
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/uiManager.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/poolManager.ts",
           "resolved": "__unresolved_16",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1587
+              "column": 1508
             },
             "end": {
               "line": 5,
-              "column": 1663
+              "column": 1580
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/util.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/resourceUtil.ts",
           "resolved": "__unresolved_17",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1679
+              "column": 1596
             },
             "end": {
               "line": 5,
-              "column": 1750
+              "column": 1669
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/msg/MsgEvent.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/storageManager.ts",
           "resolved": "__unresolved_18",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1766
+              "column": 1685
             },
             "end": {
               "line": 5,
-              "column": 1835
+              "column": 1760
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/msg/msg.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/tips.ts",
           "resolved": "__unresolved_19",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1851
+              "column": 1776
             },
             "end": {
               "line": 5,
-              "column": 1915
+              "column": 1841
             }
           }
         },
         {
-          "value": "file:///D:/cocos_work/games/SimulateCity/assets/src/res.ts",
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/uiManager.ts",
           "resolved": "__unresolved_20",
           "loc": {
             "start": {
               "line": 5,
-              "column": 1931
+              "column": 1857
             },
             "end": {
               "line": 5,
-              "column": 1991
+              "column": 1927
+            }
+          }
+        },
+        {
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts",
+          "resolved": "__unresolved_21",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 1943
+            },
+            "end": {
+              "line": 5,
+              "column": 2008
+            }
+          }
+        },
+        {
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts",
+          "resolved": "__unresolved_22",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 2024
+            },
+            "end": {
+              "line": 5,
+              "column": 2087
+            }
+          }
+        },
+        {
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts",
+          "resolved": "__unresolved_23",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 2103
+            },
+            "end": {
+              "line": 5,
+              "column": 2161
+            }
+          }
+        },
+        {
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/operate/BuildingOperateLogic.ts",
+          "resolved": "__unresolved_24",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 2177
+            },
+            "end": {
+              "line": 5,
+              "column": 2256
+            }
+          }
+        },
+        {
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/operate/IOperateHardwareHandler.ts",
+          "resolved": "__unresolved_25",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 2272
+            },
+            "end": {
+              "line": 5,
+              "column": 2354
+            }
+          }
+        },
+        {
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/operate/IOperateLogic.ts",
+          "resolved": "__unresolved_26",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 2370
+            },
+            "end": {
+              "line": 5,
+              "column": 2442
+            }
+          }
+        },
+        {
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/operate/MapOperateLogic.ts",
+          "resolved": "__unresolved_27",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 2458
+            },
+            "end": {
+              "line": 5,
+              "column": 2532
+            }
+          }
+        },
+        {
+          "value": "file:///D:/cocos_work/SimulateCity/assets/src/res.ts",
+          "resolved": "__unresolved_28",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 2548
+            },
+            "end": {
+              "line": 5,
+              "column": 2602
             }
           }
         }
@@ -929,140 +1041,196 @@
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/GlobalConst.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/CameraControllerComp.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/MapMgr.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/FreeCamera.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/OperateComp.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/MapOperateComp.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/building/BuildingComp.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/OperateComp.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/CameraControllerComp.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/component/TestScreenInputComp.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/FreeCamera.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/Handler.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/MapOperateComp.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/Log.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/TestScreenInputComp.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/csv2json.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/data/BuildingData.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/csvManager.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/data/EnumIndex.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/localConfig.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/Handler.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/poolManager.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/Log.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/resourceUtil.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/csv2json.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/storageManager.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/csvManager.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/tips.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/localConfig.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/uiManager.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/poolManager.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/framework/util.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/resourceUtil.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/msg/MsgEvent.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/storageManager.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/msg/msg.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/tips.ts"
           },
           "messages": []
         },
         {
           "resolved": {
             "type": "module",
-            "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/res.ts"
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/uiManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/operate/BuildingOperateLogic.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/operate/IOperateHardwareHandler.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/operate/IOperateLogic.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/operate/MapOperateLogic.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/res.ts"
           },
           "messages": []
         }
@@ -1614,7 +1782,7 @@
       ]
     },
     "cce:/internal/code-quality/cr.mjs": {
-      "mTimestamp": 1697100243256,
+      "mTimestamp": 1700103295135,
       "chunkId": "be027f973d8ff1c6fe3dcfebbc993118a793ec1b",
       "imports": [],
       "type": "esm",
@@ -2678,6 +2846,2993 @@
           "resolved": {
             "type": "module",
             "url": "file:///D:/cocos_work/games/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts": {
+      "mTimestamp": {
+        "mtime": 1697528875989.0542,
+        "uuid": "75dd961c-42cf-447d-88bd-3582c9b45071"
+      },
+      "chunkId": "62c81b84ada6637072b397af0bb81eb4ff6e40e7",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 57
+            },
+            "end": {
+              "line": 1,
+              "column": 61
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/CameraControllerComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697167184769.7026,
+        "uuid": "cc87237e-205a-4f42-ae6c-ff2577360aee"
+      },
+      "chunkId": "4f55028faa7c30aa995d2eb448faa51d4f1f72bc",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 125
+            },
+            "end": {
+              "line": 1,
+              "column": 129
+            }
+          }
+        },
+        {
+          "value": "../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 40
+            },
+            "end": {
+              "line": 2,
+              "column": 56
+            }
+          }
+        },
+        {
+          "value": "../msg/msg",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 20
+            },
+            "end": {
+              "line": 3,
+              "column": 32
+            }
+          }
+        },
+        {
+          "value": "../msg/MsgEvent",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 25
+            },
+            "end": {
+              "line": 4,
+              "column": 42
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts": {
+      "mTimestamp": {
+        "mtime": 1696920558073.9802,
+        "uuid": "67a3898e-4963-47d9-8023-aa72003bf7e9"
+      },
+      "chunkId": "c5ef82128533c90eec5cdfa5fdfd3adf4df3fbde",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts": {
+      "mTimestamp": {
+        "mtime": 1697513326505.5974,
+        "uuid": "7e300cab-4364-4f07-bac5-6c81beb6a56e"
+      },
+      "chunkId": "9987e9c7a67966efbf2c91518ff59cbbacd4e0c3",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/Log.ts": {
+      "mTimestamp": {
+        "mtime": 1695375909816.5493,
+        "uuid": "9163ff35-af8f-46dc-9ba7-888b8f140736"
+      },
+      "chunkId": "0b84fb7bf496fac943f9fd64a21b1389b8bb7908",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/FreeCamera.ts": {
+      "mTimestamp": {
+        "mtime": 1696995416447.0112,
+        "uuid": "4f57a5b6-4aa8-4f6c-85fc-7c4725696b9b"
+      },
+      "chunkId": "770e197368783e846ef2b650356878ab418528d9",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 128
+            },
+            "end": {
+              "line": 1,
+              "column": 132
+            }
+          }
+        },
+        {
+          "value": "../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 33
+            },
+            "end": {
+              "line": 2,
+              "column": 49
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/MapOperateComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697165943808.168,
+        "uuid": "bb0fc3bf-4017-49e7-8f07-3f0074c953c2"
+      },
+      "chunkId": "ee7f37cc4b469494481528daa1d7fbafc8a8fcdb",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 172
+            },
+            "end": {
+              "line": 1,
+              "column": 176
+            }
+          }
+        },
+        {
+          "value": "../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 57
+            },
+            "end": {
+              "line": 2,
+              "column": 73
+            }
+          }
+        },
+        {
+          "value": "../msg/msg",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 20
+            },
+            "end": {
+              "line": 3,
+              "column": 32
+            }
+          }
+        },
+        {
+          "value": "../msg/MsgEvent",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 25
+            },
+            "end": {
+              "line": 4,
+              "column": 42
+            }
+          }
+        },
+        {
+          "value": "../framework/util",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 21
+            },
+            "end": {
+              "line": 7,
+              "column": 40
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts": {
+      "mTimestamp": {
+        "mtime": 1697528822671.8755,
+        "uuid": "2f005d0c-891d-4440-8fdd-79138a32605b"
+      },
+      "chunkId": "98c6892465bad5ae774d46b4cf5d670b909aa499",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 158
+            },
+            "end": {
+              "line": 1,
+              "column": 162
+            }
+          }
+        },
+        {
+          "value": "../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 45
+            },
+            "end": {
+              "line": 2,
+              "column": 61
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/OperateComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697529960455.8408,
+        "uuid": "bc1aba95-0baa-492a-83f6-d23f16d4f959"
+      },
+      "chunkId": "a7b1b0c77a848b8f7dfd121b134291f7b2dcfc07",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 122
+            },
+            "end": {
+              "line": 1,
+              "column": 126
+            }
+          }
+        },
+        {
+          "value": "../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 64
+            },
+            "end": {
+              "line": 2,
+              "column": 80
+            }
+          }
+        },
+        {
+          "value": "../msg/MsgEvent",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 25
+            },
+            "end": {
+              "line": 4,
+              "column": 42
+            }
+          }
+        },
+        {
+          "value": "../msg/msg",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 20
+            },
+            "end": {
+              "line": 5,
+              "column": 32
+            }
+          }
+        },
+        {
+          "value": "./mapOp/MapOperateComp",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 31
+            },
+            "end": {
+              "line": 7,
+              "column": 55
+            }
+          }
+        },
+        {
+          "value": "../operate/MapOperateLogic",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 32
+            },
+            "end": {
+              "line": 8,
+              "column": 60
+            }
+          }
+        },
+        {
+          "value": "../operate/BuildingOperateLogic",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 37
+            },
+            "end": {
+              "line": 9,
+              "column": 70
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/MapOperateComp.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/operate/MapOperateLogic.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/operate/BuildingOperateLogic.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/TestScreenInputComp.ts": {
+      "mTimestamp": {
+        "mtime": 1696909221043.5696,
+        "uuid": "c57f6add-4e03-46aa-ba35-6612b25d07f2"
+      },
+      "chunkId": "1941c087f9be05165b5867c1272cbe8512e2f633",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 134
+            },
+            "end": {
+              "line": 1,
+              "column": 138
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/Handler.ts": {
+      "mTimestamp": {
+        "mtime": 1695710783036.929,
+        "uuid": "b7951bd6-520d-4269-bd4c-cf793dedceba"
+      },
+      "chunkId": "6c0e676828a038e31f3eed141242b333ccf423b8",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/csv2json.ts": {
+      "mTimestamp": {
+        "mtime": 1695352794146.5425,
+        "uuid": "f6b651fc-4c42-4898-9559-6c5dae96690b"
+      },
+      "chunkId": "420901f98ab502ac7957f86fe051eb9771e51538",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/csvManager.ts": {
+      "mTimestamp": {
+        "mtime": 1695724289910.4155,
+        "uuid": "ee0573b6-30af-4fc0-81ef-aee04392ec92"
+      },
+      "chunkId": "b173698d5f032f6e75d06167fe69e928a203d3de",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 27
+            },
+            "end": {
+              "line": 1,
+              "column": 31
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/localConfig.ts": {
+      "mTimestamp": {
+        "mtime": 1695724273331.3064,
+        "uuid": "590352bc-1baa-4b5e-bfa4-1dda4a538d2b"
+      },
+      "chunkId": "7aa3ecbad01480fdabefb16d953d735ef78a7bc9",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 38
+            },
+            "end": {
+              "line": 1,
+              "column": 42
+            }
+          }
+        },
+        {
+          "value": "./csvManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 27
+            },
+            "end": {
+              "line": 2,
+              "column": 41
+            }
+          }
+        },
+        {
+          "value": "./resourceUtil",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 29
+            },
+            "end": {
+              "line": 3,
+              "column": 45
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/csvManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/resourceUtil.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/resourceUtil.ts": {
+      "mTimestamp": {
+        "mtime": 1695609277701.4163,
+        "uuid": "fa19f3b4-8049-4474-bc5c-5c713ecf9c36"
+      },
+      "chunkId": "e25ab441d83ab45ac373036b3a6ca515911bf6f5",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 162
+            },
+            "end": {
+              "line": 1,
+              "column": 166
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/poolManager.ts": {
+      "mTimestamp": {
+        "mtime": 1695608760064.4575,
+        "uuid": "a63d58d5-0bc5-492c-a375-c6874452b659"
+      },
+      "chunkId": "4bc6a857776efab90a86ddf0cadb5bbd68bf7150",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 64
+            },
+            "end": {
+              "line": 1,
+              "column": 68
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/storageManager.ts": {
+      "mTimestamp": {
+        "mtime": 1695707383786.6533,
+        "uuid": "cceebd43-e948-4cc9-9a55-fcc637af7f82"
+      },
+      "chunkId": "3bc05eb1a4b9256e554c2e7faf2a3476dae8388c",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 45
+            },
+            "end": {
+              "line": 1,
+              "column": 49
+            }
+          }
+        },
+        {
+          "value": "./util",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 21
+            },
+            "end": {
+              "line": 2,
+              "column": 29
+            }
+          }
+        },
+        {
+          "value": "./Log",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 20
+            },
+            "end": {
+              "line": 3,
+              "column": 27
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/Log.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/tips.ts": {
+      "mTimestamp": {
+        "mtime": 1695711393135.3691,
+        "uuid": "cefadf31-8eb1-4a32-bfd6-4337e95d9385"
+      },
+      "chunkId": "b36a39503c80d47d0d615b3bcae0a22fa0edab8e",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 148
+            },
+            "end": {
+              "line": 1,
+              "column": 152
+            }
+          }
+        },
+        {
+          "value": "./poolManager",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 28
+            },
+            "end": {
+              "line": 2,
+              "column": 43
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/poolManager.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/framework/uiManager.ts": {
+      "mTimestamp": {
+        "mtime": 1695692090868.5837,
+        "uuid": "25e11b88-2be8-4ab2-9b0e-d75e1334f54e"
+      },
+      "chunkId": "be7a171090ad2a2f7efb9746aa162e4cd82e4db0",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 67
+            },
+            "end": {
+              "line": 1,
+              "column": 71
+            }
+          }
+        },
+        {
+          "value": "./resourceUtil",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 29
+            },
+            "end": {
+              "line": 2,
+              "column": 45
+            }
+          }
+        },
+        {
+          "value": "./poolManager",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 28
+            },
+            "end": {
+              "line": 3,
+              "column": 43
+            }
+          }
+        },
+        {
+          "value": "./tips",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 21
+            },
+            "end": {
+              "line": 4,
+              "column": 29
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/resourceUtil.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/poolManager.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/tips.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/res.ts": {
+      "mTimestamp": {
+        "mtime": 1697078344798.6116,
+        "uuid": "fea4ba00-06b9-492f-a040-c470d9d90c45"
+      },
+      "chunkId": "3885e4f3f494f7057417dd786abd5cd2e09a6c00",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 256
+            },
+            "end": {
+              "line": 1,
+              "column": 260
+            }
+          }
+        },
+        {
+          "value": "./msg/msg",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 20
+            },
+            "end": {
+              "line": 2,
+              "column": 31
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/CameraControllerComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697513352695.5408,
+        "uuid": "4cb76d2a-ac0f-46c9-9cde-fa26d84e08f2"
+      },
+      "chunkId": "1843f60699a908d450f4430109cc4e0981d6d942",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 125
+            },
+            "end": {
+              "line": 1,
+              "column": 129
+            }
+          }
+        },
+        {
+          "value": "../../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 40
+            },
+            "end": {
+              "line": 2,
+              "column": 59
+            }
+          }
+        },
+        {
+          "value": "../../msg/msg",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 20
+            },
+            "end": {
+              "line": 3,
+              "column": 35
+            }
+          }
+        },
+        {
+          "value": "../../msg/MsgEvent",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 25
+            },
+            "end": {
+              "line": 4,
+              "column": 45
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/FreeCamera.ts": {
+      "mTimestamp": {
+        "mtime": 1697169446144.2534,
+        "uuid": "cfbf51df-c65a-40a6-ae75-58dbc0125dfa"
+      },
+      "chunkId": "dca37f08ed6f8aadfa09c45036a1677cf2b00610",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 128
+            },
+            "end": {
+              "line": 1,
+              "column": 132
+            }
+          }
+        },
+        {
+          "value": "../../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 33
+            },
+            "end": {
+              "line": 2,
+              "column": 52
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/MapOperateComp.ts": {
+      "mTimestamp": {
+        "mtime": 1698113438854.4248,
+        "uuid": "8fcd9926-9469-4d89-95f4-882f3a017535"
+      },
+      "chunkId": "3e4ee88f8fa02702c4500eef1d919254c59f080a",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 202
+            },
+            "end": {
+              "line": 1,
+              "column": 206
+            }
+          }
+        },
+        {
+          "value": "../../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 64
+            },
+            "end": {
+              "line": 2,
+              "column": 83
+            }
+          }
+        },
+        {
+          "value": "../../framework/util",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 21
+            },
+            "end": {
+              "line": 3,
+              "column": 43
+            }
+          }
+        },
+        {
+          "value": "../../msg/MsgEvent",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 25
+            },
+            "end": {
+              "line": 4,
+              "column": 45
+            }
+          }
+        },
+        {
+          "value": "../../msg/msg",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 20
+            },
+            "end": {
+              "line": 5,
+              "column": 35
+            }
+          }
+        },
+        {
+          "value": "../../MapMgr",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 23
+            },
+            "end": {
+              "line": 6,
+              "column": 37
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/MapMgr.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/OperateComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697436857843.5432,
+        "uuid": "bc1aba95-0baa-492a-83f6-d23f16d4f959"
+      },
+      "chunkId": "ab47d93b9cdea552b2ea77760afcc392d21ff8c1",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 151
+            },
+            "end": {
+              "line": 1,
+              "column": 155
+            }
+          }
+        },
+        {
+          "value": "./CameraControllerComp",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 37
+            },
+            "end": {
+              "line": 3,
+              "column": 61
+            }
+          }
+        },
+        {
+          "value": "./MapOperateComp",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 31
+            },
+            "end": {
+              "line": 4,
+              "column": 49
+            }
+          }
+        },
+        {
+          "value": "../../GlobalConst",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 64
+            },
+            "end": {
+              "line": 5,
+              "column": 83
+            }
+          }
+        },
+        {
+          "value": "../../framework/util",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 21
+            },
+            "end": {
+              "line": 6,
+              "column": 43
+            }
+          }
+        },
+        {
+          "value": "../../msg/MsgEvent",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 25
+            },
+            "end": {
+              "line": 7,
+              "column": 45
+            }
+          }
+        },
+        {
+          "value": "../../msg/msg",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 20
+            },
+            "end": {
+              "line": 8,
+              "column": 35
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/CameraControllerComp.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/MapOperateComp.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/TestScreenInputComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697437259578.4973,
+        "uuid": "68a13d64-52ee-4410-b359-58dbcd3593c9"
+      },
+      "chunkId": "876118238fe8933a73217df9bcc3c461aead5bad",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 134
+            },
+            "end": {
+              "line": 1,
+              "column": 138
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/MapMgr.ts": {
+      "mTimestamp": {
+        "mtime": 1697594072403.8054,
+        "uuid": "af2dc34e-32dc-462d-ab85-996b3aa1931c"
+      },
+      "chunkId": "a153a6753ba10323637076aebf6be29e0b58f178",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 86
+            },
+            "end": {
+              "line": 1,
+              "column": 90
+            }
+          }
+        },
+        {
+          "value": "./GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 52
+            },
+            "end": {
+              "line": 2,
+              "column": 67
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/building/BuildingComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697425577321.1887,
+        "uuid": "00ee3c35-f71d-46e3-85b3-20149901b207"
+      },
+      "chunkId": "f9a14fbeb28cc4b6c914a87291c31a7b573e6e10",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 128
+            },
+            "end": {
+              "line": 1,
+              "column": 132
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/component/building/BuildingOperateComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697436999474.1804,
+        "uuid": "9d33247c-16bf-4455-925c-e8b49ae28298"
+      },
+      "chunkId": "ebad0e5ac3acb30c525d48a5f95249a1f69c21de",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 138
+            },
+            "end": {
+              "line": 1,
+              "column": 142
+            }
+          }
+        },
+        {
+          "value": "../../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 52
+            },
+            "end": {
+              "line": 2,
+              "column": 71
+            }
+          }
+        },
+        {
+          "value": "../../msg/MsgEvent",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 25
+            },
+            "end": {
+              "line": 3,
+              "column": 45
+            }
+          }
+        },
+        {
+          "value": "../../msg/msg",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 20
+            },
+            "end": {
+              "line": 4,
+              "column": 35
+            }
+          }
+        },
+        {
+          "value": "../../framework/util",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 21
+            },
+            "end": {
+              "line": 5,
+              "column": 43
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/data/BuildingData.ts": {
+      "mTimestamp": {
+        "mtime": 1697425455873.1958,
+        "uuid": "2c090066-7dd9-4522-b47c-9c428251317b"
+      },
+      "chunkId": "301d761604ae03b605e7e0446fcd406ff04ee91a",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/data/EnumIndex.ts": {
+      "mTimestamp": {
+        "mtime": 1697425431041.755,
+        "uuid": "e488b56c-1e70-4543-967a-ff9e2b5a517b"
+      },
+      "chunkId": "8e4fb4d0411fb3ac8dc723de72666a1d72038191",
+      "imports": [
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/operate/MapOperateLogic.ts": {
+      "mTimestamp": {
+        "mtime": 1697450180446.468,
+        "uuid": "7dd7bc61-4179-4831-a206-81cb9c2ca18b"
+      },
+      "chunkId": "f05fa2564d17348d289af07ae8aa6a3a9a10100b",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 45
+            },
+            "end": {
+              "line": 1,
+              "column": 49
+            }
+          }
+        },
+        {
+          "value": "../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 64
+            },
+            "end": {
+              "line": 3,
+              "column": 80
+            }
+          }
+        },
+        {
+          "value": "../component/mapOp/CameraControllerComp",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 37
+            },
+            "end": {
+              "line": 4,
+              "column": 78
+            }
+          }
+        },
+        {
+          "value": "../msg/MsgEvent",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 5,
+              "column": 25
+            },
+            "end": {
+              "line": 5,
+              "column": 42
+            }
+          }
+        },
+        {
+          "value": "../msg/msg",
+          "resolved": "__unresolved_4",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 20
+            },
+            "end": {
+              "line": 6,
+              "column": 32
+            }
+          }
+        },
+        {
+          "value": "../framework/util",
+          "resolved": "__unresolved_5",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 21
+            },
+            "end": {
+              "line": 7,
+              "column": 40
+            }
+          }
+        },
+        {
+          "value": "../component/mapOp/MapOperateComp",
+          "resolved": "__unresolved_6",
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 31
+            },
+            "end": {
+              "line": 8,
+              "column": 66
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/CameraControllerComp.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/component/mapOp/MapOperateComp.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/operate/BuildingOperateComp.ts": {
+      "mTimestamp": {
+        "mtime": 1697438259239.1194,
+        "uuid": "a8fc457c-8f32-4c3e-be1b-7c9fb28ac5c9"
+      },
+      "chunkId": "ae7dc22fe30bb27e14a5f7d4df0b8eea58410446",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 87
+            },
+            "end": {
+              "line": 1,
+              "column": 91
+            }
+          }
+        },
+        {
+          "value": "../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 52
+            },
+            "end": {
+              "line": 2,
+              "column": 68
+            }
+          }
+        },
+        {
+          "value": "../msg/MsgEvent",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 25
+            },
+            "end": {
+              "line": 3,
+              "column": 42
+            }
+          }
+        },
+        {
+          "value": "../msg/msg",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 20
+            },
+            "end": {
+              "line": 4,
+              "column": 32
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/MsgEvent.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/msg/msg.ts"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/operate/IOperateHardwareHandler.ts": {
+      "mTimestamp": {
+        "mtime": 1697438295892.761,
+        "uuid": "f6a21acd-f6ec-4053-9171-e0fa8f0eaa89"
+      },
+      "chunkId": "5db71eb19faa78aca72a29188cd1c5f528df5930",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/operate/IOperateLogic.ts": {
+      "mTimestamp": {
+        "mtime": 1697437757952.5476,
+        "uuid": "03065c32-49c9-4bc4-9036-adc53adae62b"
+      },
+      "chunkId": "fd058587f6f6670c3001e7fc3f64fa45fd5d75d5",
+      "imports": [
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        }
+      ]
+    },
+    "file:///D:/cocos_work/SimulateCity/assets/src/operate/BuildingOperateLogic.ts": {
+      "mTimestamp": {
+        "mtime": 1697529475483.223,
+        "uuid": "5e10a628-1420-4453-aa8a-28f942640a5e"
+      },
+      "chunkId": "c3a8541cd9ccad976f3a1198e9cc2999e49646ab",
+      "imports": [
+        {
+          "value": "cce:/internal/code-quality/cr.mjs",
+          "resolved": "__unresolved_0"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc"
+        },
+        {
+          "value": "cc",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 91
+            },
+            "end": {
+              "line": 1,
+              "column": 95
+            }
+          }
+        },
+        {
+          "value": "../GlobalConst",
+          "resolved": "__unresolved_1",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 52
+            },
+            "end": {
+              "line": 2,
+              "column": 68
+            }
+          }
+        },
+        {
+          "value": "../framework/util",
+          "resolved": "__unresolved_2",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 21
+            },
+            "end": {
+              "line": 6,
+              "column": 40
+            }
+          }
+        },
+        {
+          "value": "../MapMgr",
+          "resolved": "__unresolved_3",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 23
+            },
+            "end": {
+              "line": 7,
+              "column": 34
+            }
+          }
+        }
+      ],
+      "type": "esm",
+      "resolutions": [
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/code-quality/cr.mjs"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "cce:/internal/x/cc"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/GlobalConst.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/framework/util.ts"
+          },
+          "messages": []
+        },
+        {
+          "resolved": {
+            "type": "module",
+            "url": "file:///D:/cocos_work/SimulateCity/assets/src/MapMgr.ts"
           },
           "messages": []
         }
